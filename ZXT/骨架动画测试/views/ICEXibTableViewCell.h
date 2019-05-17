@@ -1,18 +1,16 @@
 //
-//  ICEXibViewController.h
+//  ICEXibTableViewCell.h
 //  ZXT
 //
-//  Created by doman on 2019/5/9.
+//  Created by 1 on 2019/5/17.
 //  Copyright © 2019 Free world co., LTD. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-#import "ICEXibTableViewCell.h"
-
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ICEXibViewController : UIViewController
+@interface ICEXibTableViewCell : UITableViewCell
 
 @end
 

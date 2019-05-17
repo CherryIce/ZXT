@@ -14,9 +14,11 @@
 
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define kNavHegith [UIApplication sharedApplication].statusBarFrame.size.height + 44
 
 #import "TABAnimated.h"
-#import "Masonry.h"
+#import "SDAutoLayout.h"
 
+#import "ICETools.h"
 
 #endif /* PrefixHeader_pch */

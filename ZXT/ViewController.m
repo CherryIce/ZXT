@@ -74,10 +74,7 @@
  */
 - (void)initUI {
     self.view.backgroundColor = [UIColor whiteColor];
-     [self.tableView tab_startAnimation];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.tableView tab_endAnimation];
-    });
+    [self.tableView reloadData];
 }
 
 #pragma mark - Lazy Methods
@@ -92,8 +89,6 @@
         _tableView.estimatedRowHeight = 0;
         _tableView.estimatedSectionFooterHeight = 0;
         _tableView.estimatedSectionHeaderHeight = 0;
-        
-        _tableView.tabAnimated = [TABTableAnimated animatedWithCellClass:[UITableViewCell class] cellHeight:50];
         [self.view addSubview:_tableView];
     }
     return _tableView;

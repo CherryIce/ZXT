@@ -34,21 +34,21 @@
 		2243045E2282B15B001E95A7 /* ICEZZTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243045D2282B15B001E95A7 /* ICEZZTViewController.m */; };
 		224304622282B19A001E95A7 /* ICEZXTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304612282B19A001E95A7 /* ICEZXTViewController.m */; };
 		224304652282B1A7001E95A7 /* ICEBZTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304642282B1A7001E95A7 /* ICEBZTViewController.m */; };
-		224304852282B4EB001E95A7 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243046C2282B4EB001E95A7 /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		224304862282B4EB001E95A7 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304752282B4EB001E95A7 /* ViewController+MASAdditions.m */; };
-		224304872282B4EB001E95A7 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304792282B4EB001E95A7 /* MASCompositeConstraint.m */; };
-		224304882282B4EB001E95A7 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243047A2282B4EB001E95A7 /* MASConstraintMaker.m */; };
-		224304892282B4EB001E95A7 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243047B2282B4EB001E95A7 /* MASLayoutConstraint.m */; };
-		2243048A2282B4EB001E95A7 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243047C2282B4EB001E95A7 /* NSArray+MASAdditions.m */; };
-		2243048B2282B4EB001E95A7 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243047D2282B4EB001E95A7 /* View+MASAdditions.m */; };
-		2243048C2282B4EB001E95A7 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304802282B4EB001E95A7 /* MASConstraint.m */; };
-		2243048D2282B4EB001E95A7 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304822282B4EB001E95A7 /* MASViewConstraint.m */; };
-		2243048E2282B4EB001E95A7 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304832282B4EB001E95A7 /* MASViewAttribute.m */; };
-		2243048F2282B4EB001E95A7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 224304842282B4EB001E95A7 /* Info.plist */; };
 		22CA2CFA2283FE1800460357 /* ICECodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CA2CF92283FE1800460357 /* ICECodeViewController.m */; };
 		22CA2CFD2283FE2800460357 /* ICEXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CA2CFC2283FE2800460357 /* ICEXibViewController.m */; };
-		22CA2D002283FE3500460357 /* ICECollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CA2CFF2283FE3500460357 /* ICECollectionViewController.m */; };
 		22CA2D032283FE4A00460357 /* ICEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CA2D022283FE4A00460357 /* ICEViewController.m */; };
+		6328F46E228D5FDC00CDE193 /* ICETableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F46D228D5FDC00CDE193 /* ICETableViewCell.m */; };
+		6328F473228E48A800CDE193 /* ICEModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F472228E48A800CDE193 /* ICEModel.m */; };
+		6328F48B228E5B1600CDE193 /* ICEXibTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F489228E5B1600CDE193 /* ICEXibTableViewCell.m */; };
+		6328F48C228E5B1600CDE193 /* ICEXibTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6328F48A228E5B1600CDE193 /* ICEXibTableViewCell.xib */; };
+		6328F490228E87AB00CDE193 /* ICETools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F48F228E87AB00CDE193 /* ICETools.m */; };
+		6328F493228E8DDC00CDE193 /* ICETestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F492228E8DDC00CDE193 /* ICETestView.m */; };
+		6328F497228E8DF000CDE193 /* ICEViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F495228E8DF000CDE193 /* ICEViewCell.m */; };
+		6328F498228E8DF000CDE193 /* ICEViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6328F496228E8DF000CDE193 /* ICEViewCell.xib */; };
+		6328F4A3228EB5CE00CDE193 /* ICECollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F4A2228EB5CE00CDE193 /* ICECollectionViewController.m */; };
+		6328F4A7228EB5D600CDE193 /* ICECollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F4A4228EB5D600CDE193 /* ICECollectionViewCell.m */; };
+		6328F4A8228EB5D600CDE193 /* ICECollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6328F4A6228EB5D600CDE193 /* ICECollectionViewCell.xib */; };
+		ED843D73A3575E30BEB8ABFD /* Pods_ZXT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B2899D578FD9EDC9FC80E2 /* Pods_ZXT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		102EA7C1E4C77F68EA2DE4A5 /* Pods-ZXT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXT.debug.xcconfig"; path = "Target Support Files/Pods-ZXT/Pods-ZXT.debug.xcconfig"; sourceTree = "<group>"; };
 		224303F52282AC28001E95A7 /* ZXT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		224303F82282AC28001E95A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		224303F92282AC28001E95A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -124,40 +125,33 @@
 		224304612282B19A001E95A7 /* ICEZXTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEZXTViewController.m; sourceTree = "<group>"; };
 		224304632282B1A7001E95A7 /* ICEBZTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEBZTViewController.h; sourceTree = "<group>"; };
 		224304642282B1A7001E95A7 /* ICEBZTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEBZTViewController.m; sourceTree = "<group>"; };
-		2243046B2282B4EB001E95A7 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
-		2243046C2282B4EB001E95A7 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		2243046D2282B4EB001E95A7 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
-		2243046E2282B4EB001E95A7 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
-		2243046F2282B4EB001E95A7 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		224304702282B4EB001E95A7 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
-		224304712282B4EB001E95A7 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
-		224304722282B4EB001E95A7 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		224304732282B4EB001E95A7 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
-		224304742282B4EB001E95A7 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
-		224304752282B4EB001E95A7 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		224304762282B4EB001E95A7 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
-		224304772282B4EB001E95A7 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
-		224304782282B4EB001E95A7 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		224304792282B4EB001E95A7 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
-		2243047A2282B4EB001E95A7 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
-		2243047B2282B4EB001E95A7 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
-		2243047C2282B4EB001E95A7 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		2243047D2282B4EB001E95A7 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
-		2243047E2282B4EB001E95A7 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		2243047F2282B4EB001E95A7 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
-		224304802282B4EB001E95A7 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
-		224304812282B4EB001E95A7 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		224304822282B4EB001E95A7 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
-		224304832282B4EB001E95A7 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
-		224304842282B4EB001E95A7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22CA2CF82283FE1800460357 /* ICECodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICECodeViewController.h; sourceTree = "<group>"; };
 		22CA2CF92283FE1800460357 /* ICECodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICECodeViewController.m; sourceTree = "<group>"; };
 		22CA2CFB2283FE2800460357 /* ICEXibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEXibViewController.h; sourceTree = "<group>"; };
 		22CA2CFC2283FE2800460357 /* ICEXibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEXibViewController.m; sourceTree = "<group>"; };
-		22CA2CFE2283FE3500460357 /* ICECollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICECollectionViewController.h; sourceTree = "<group>"; };
-		22CA2CFF2283FE3500460357 /* ICECollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICECollectionViewController.m; sourceTree = "<group>"; };
 		22CA2D012283FE4A00460357 /* ICEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEViewController.h; sourceTree = "<group>"; };
 		22CA2D022283FE4A00460357 /* ICEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEViewController.m; sourceTree = "<group>"; };
+		6328F46C228D5FDC00CDE193 /* ICETableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICETableViewCell.h; sourceTree = "<group>"; };
+		6328F46D228D5FDC00CDE193 /* ICETableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICETableViewCell.m; sourceTree = "<group>"; };
+		6328F471228E48A800CDE193 /* ICEModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEModel.h; sourceTree = "<group>"; };
+		6328F472228E48A800CDE193 /* ICEModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEModel.m; sourceTree = "<group>"; };
+		6328F488228E5B1600CDE193 /* ICEXibTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEXibTableViewCell.h; sourceTree = "<group>"; };
+		6328F489228E5B1600CDE193 /* ICEXibTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEXibTableViewCell.m; sourceTree = "<group>"; };
+		6328F48A228E5B1600CDE193 /* ICEXibTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICEXibTableViewCell.xib; sourceTree = "<group>"; };
+		6328F48E228E87AB00CDE193 /* ICETools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICETools.h; sourceTree = "<group>"; };
+		6328F48F228E87AB00CDE193 /* ICETools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICETools.m; sourceTree = "<group>"; };
+		6328F491228E8DDC00CDE193 /* ICETestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICETestView.h; sourceTree = "<group>"; };
+		6328F492228E8DDC00CDE193 /* ICETestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICETestView.m; sourceTree = "<group>"; };
+		6328F494228E8DF000CDE193 /* ICEViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEViewCell.h; sourceTree = "<group>"; };
+		6328F495228E8DF000CDE193 /* ICEViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEViewCell.m; sourceTree = "<group>"; };
+		6328F496228E8DF000CDE193 /* ICEViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICEViewCell.xib; sourceTree = "<group>"; };
+		6328F4A1228EB5CE00CDE193 /* ICECollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICECollectionViewController.h; sourceTree = "<group>"; };
+		6328F4A2228EB5CE00CDE193 /* ICECollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICECollectionViewController.m; sourceTree = "<group>"; };
+		6328F4A4228EB5D600CDE193 /* ICECollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICECollectionViewCell.m; sourceTree = "<group>"; };
+		6328F4A5228EB5D600CDE193 /* ICECollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICECollectionViewCell.h; sourceTree = "<group>"; };
+		6328F4A6228EB5D600CDE193 /* ICECollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICECollectionViewCell.xib; sourceTree = "<group>"; };
+		9E337BC15CE31478928B43C6 /* Pods-ZXT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXT.release.xcconfig"; path = "Target Support Files/Pods-ZXT/Pods-ZXT.release.xcconfig"; sourceTree = "<group>"; };
+		F9B2899D578FD9EDC9FC80E2 /* Pods_ZXT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZXT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED843D73A3575E30BEB8ABFD /* Pods_ZXT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,11 +183,12 @@
 		224303EC2282AC28001E95A7 = {
 			isa = PBXGroup;
 			children = (
-				2243046A2282B4EB001E95A7 /* Masonry */,
 				224303F72282AC28001E95A7 /* ZXT */,
 				224304102282AC29001E95A7 /* ZXTTests */,
 				2243041B2282AC29001E95A7 /* ZXTUITests */,
 				224303F62282AC28001E95A7 /* Products */,
+				ACC6EE51158D2CFD9FE80111 /* Pods */,
+				B2841147C9466804F167C215 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -296,52 +292,69 @@
 			path = "线状图";
 			sourceTree = "<group>";
 		};
-		2243046A2282B4EB001E95A7 /* Masonry */ = {
-			isa = PBXGroup;
-			children = (
-				2243046B2282B4EB001E95A7 /* MASCompositeConstraint.h */,
-				2243046C2282B4EB001E95A7 /* NSLayoutConstraint+MASDebugAdditions.m */,
-				2243046D2282B4EB001E95A7 /* MASConstraint+Private.h */,
-				2243046E2282B4EB001E95A7 /* MASLayoutConstraint.h */,
-				2243046F2282B4EB001E95A7 /* NSArray+MASShorthandAdditions.h */,
-				224304702282B4EB001E95A7 /* MASConstraintMaker.h */,
-				224304712282B4EB001E95A7 /* View+MASAdditions.h */,
-				224304722282B4EB001E95A7 /* NSArray+MASAdditions.h */,
-				224304732282B4EB001E95A7 /* MASUtilities.h */,
-				224304742282B4EB001E95A7 /* MASViewAttribute.h */,
-				224304752282B4EB001E95A7 /* ViewController+MASAdditions.m */,
-				224304762282B4EB001E95A7 /* MASViewConstraint.h */,
-				224304772282B4EB001E95A7 /* MASConstraint.h */,
-				224304782282B4EB001E95A7 /* NSLayoutConstraint+MASDebugAdditions.h */,
-				224304792282B4EB001E95A7 /* MASCompositeConstraint.m */,
-				2243047A2282B4EB001E95A7 /* MASConstraintMaker.m */,
-				2243047B2282B4EB001E95A7 /* MASLayoutConstraint.m */,
-				2243047C2282B4EB001E95A7 /* NSArray+MASAdditions.m */,
-				2243047D2282B4EB001E95A7 /* View+MASAdditions.m */,
-				2243047E2282B4EB001E95A7 /* View+MASShorthandAdditions.h */,
-				2243047F2282B4EB001E95A7 /* Masonry.h */,
-				224304802282B4EB001E95A7 /* MASConstraint.m */,
-				224304812282B4EB001E95A7 /* ViewController+MASAdditions.h */,
-				224304822282B4EB001E95A7 /* MASViewConstraint.m */,
-				224304832282B4EB001E95A7 /* MASViewAttribute.m */,
-				224304842282B4EB001E95A7 /* Info.plist */,
-			);
-			path = Masonry;
-			sourceTree = "<group>";
-		};
 		22CA2CF72283FDEC00460357 /* 骨架动画测试 */ = {
 			isa = PBXGroup;
 			children = (
+				6328F48D228E877D00CDE193 /* object */,
+				6328F46B228D5FAE00CDE193 /* views */,
 				22CA2CF82283FE1800460357 /* ICECodeViewController.h */,
 				22CA2CF92283FE1800460357 /* ICECodeViewController.m */,
 				22CA2CFB2283FE2800460357 /* ICEXibViewController.h */,
 				22CA2CFC2283FE2800460357 /* ICEXibViewController.m */,
-				22CA2CFE2283FE3500460357 /* ICECollectionViewController.h */,
-				22CA2CFF2283FE3500460357 /* ICECollectionViewController.m */,
 				22CA2D012283FE4A00460357 /* ICEViewController.h */,
 				22CA2D022283FE4A00460357 /* ICEViewController.m */,
+				6328F4A1228EB5CE00CDE193 /* ICECollectionViewController.h */,
+				6328F4A2228EB5CE00CDE193 /* ICECollectionViewController.m */,
 			);
 			path = "骨架动画测试";
+			sourceTree = "<group>";
+		};
+		6328F46B228D5FAE00CDE193 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				6328F4A5228EB5D600CDE193 /* ICECollectionViewCell.h */,
+				6328F4A4228EB5D600CDE193 /* ICECollectionViewCell.m */,
+				6328F4A6228EB5D600CDE193 /* ICECollectionViewCell.xib */,
+				6328F46C228D5FDC00CDE193 /* ICETableViewCell.h */,
+				6328F46D228D5FDC00CDE193 /* ICETableViewCell.m */,
+				6328F488228E5B1600CDE193 /* ICEXibTableViewCell.h */,
+				6328F489228E5B1600CDE193 /* ICEXibTableViewCell.m */,
+				6328F48A228E5B1600CDE193 /* ICEXibTableViewCell.xib */,
+				6328F491228E8DDC00CDE193 /* ICETestView.h */,
+				6328F492228E8DDC00CDE193 /* ICETestView.m */,
+				6328F494228E8DF000CDE193 /* ICEViewCell.h */,
+				6328F495228E8DF000CDE193 /* ICEViewCell.m */,
+				6328F496228E8DF000CDE193 /* ICEViewCell.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		6328F48D228E877D00CDE193 /* object */ = {
+			isa = PBXGroup;
+			children = (
+				6328F471228E48A800CDE193 /* ICEModel.h */,
+				6328F472228E48A800CDE193 /* ICEModel.m */,
+				6328F48E228E87AB00CDE193 /* ICETools.h */,
+				6328F48F228E87AB00CDE193 /* ICETools.m */,
+			);
+			path = object;
+			sourceTree = "<group>";
+		};
+		ACC6EE51158D2CFD9FE80111 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				102EA7C1E4C77F68EA2DE4A5 /* Pods-ZXT.debug.xcconfig */,
+				9E337BC15CE31478928B43C6 /* Pods-ZXT.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B2841147C9466804F167C215 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9B2899D578FD9EDC9FC80E2 /* Pods_ZXT.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,9 +364,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 224304212282AC29001E95A7 /* Build configuration list for PBXNativeTarget "ZXT" */;
 			buildPhases = (
+				6F10C97A0E5EA3306DCAFEB3 /* [CP] Check Pods Manifest.lock */,
 				224303F12282AC28001E95A7 /* Sources */,
 				224303F22282AC28001E95A7 /* Frameworks */,
 				224303F32282AC28001E95A7 /* Resources */,
+				AD6795983821C40CFED5187A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -448,10 +463,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2243048F2282B4EB001E95A7 /* Info.plist in Resources */,
 				224304052282AC29001E95A7 /* LaunchScreen.storyboard in Resources */,
 				224304022282AC29001E95A7 /* Assets.xcassets in Resources */,
 				224304002282AC28001E95A7 /* Main.storyboard in Resources */,
+				6328F48C228E5B1600CDE193 /* ICEXibTableViewCell.xib in Resources */,
+				6328F4A8228EB5D600CDE193 /* ICECollectionViewCell.xib in Resources */,
+				6328F498228E8DF000CDE193 /* ICEViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,44 +488,88 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6F10C97A0E5EA3306DCAFEB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZXT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD6795983821C40CFED5187A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZXT/Pods-ZXT-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDAutoLayout/SDAutoLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDAutoLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZXT/Pods-ZXT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		224303F12282AC28001E95A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2243048A2282B4EB001E95A7 /* NSArray+MASAdditions.m in Sources */,
 				224304572282ACD4001E95A7 /* TABManagerMethod.m in Sources */,
 				22CA2D032283FE4A00460357 /* ICEViewController.m in Sources */,
 				2243045E2282B15B001E95A7 /* ICEZZTViewController.m in Sources */,
-				224304862282B4EB001E95A7 /* ViewController+MASAdditions.m in Sources */,
 				224304542282ACD4001E95A7 /* TABAnimated.m in Sources */,
 				224304552282ACD4001E95A7 /* UIView+TABAnimated.m in Sources */,
 				224304532282ACD4001E95A7 /* TABCollectionAnimated.m in Sources */,
 				224304502282ACD4001E95A7 /* NSArray+TABAnimated.m in Sources */,
 				224304562282ACD4001E95A7 /* TABTableAnimated.m in Sources */,
-				224304852282B4EB001E95A7 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				22CA2CFA2283FE1800460357 /* ICECodeViewController.m in Sources */,
+				6328F490228E87AB00CDE193 /* ICETools.m in Sources */,
+				6328F4A7228EB5D600CDE193 /* ICECollectionViewCell.m in Sources */,
 				224303FD2282AC28001E95A7 /* ViewController.m in Sources */,
 				224304082282AC29001E95A7 /* main.m in Sources */,
+				6328F46E228D5FDC00CDE193 /* ICETableViewCell.m in Sources */,
 				224304622282B19A001E95A7 /* ICEZXTViewController.m in Sources */,
-				2243048B2282B4EB001E95A7 /* View+MASAdditions.m in Sources */,
-				22CA2D002283FE3500460357 /* ICECollectionViewController.m in Sources */,
-				2243048C2282B4EB001E95A7 /* MASConstraint.m in Sources */,
 				224304512282ACD4001E95A7 /* TABViewAnimated.m in Sources */,
+				6328F473228E48A800CDE193 /* ICEModel.m in Sources */,
 				224304582282ACD4001E95A7 /* UITableView+TABAnimated.m in Sources */,
-				224304872282B4EB001E95A7 /* MASCompositeConstraint.m in Sources */,
+				6328F48B228E5B1600CDE193 /* ICEXibTableViewCell.m in Sources */,
 				224304522282ACD4001E95A7 /* UITableViewCell+TABLayoutSubviews.m in Sources */,
-				224304892282B4EB001E95A7 /* MASLayoutConstraint.m in Sources */,
+				6328F497228E8DF000CDE193 /* ICEViewCell.m in Sources */,
+				6328F4A3228EB5CE00CDE193 /* ICECollectionViewController.m in Sources */,
 				2243044C2282ACD4001E95A7 /* TABAnimationMethod.m in Sources */,
+				6328F493228E8DDC00CDE193 /* ICETestView.m in Sources */,
 				224304592282ACD4001E95A7 /* UIView+TABLayoutSubviews.m in Sources */,
 				2243044D2282ACD4001E95A7 /* UICollectionView+TABAnimated.m in Sources */,
 				2243044E2282ACD4001E95A7 /* UICollectionViewCell+TABLayoutSubviews.m in Sources */,
 				2243045A2282ACD4001E95A7 /* TABLayer.m in Sources */,
-				224304882282B4EB001E95A7 /* MASConstraintMaker.m in Sources */,
-				2243048D2282B4EB001E95A7 /* MASViewConstraint.m in Sources */,
 				2243044F2282ACD4001E95A7 /* TABComponentLayer.m in Sources */,
 				224304652282B1A7001E95A7 /* ICEBZTViewController.m in Sources */,
-				2243048E2282B4EB001E95A7 /* MASViewAttribute.m in Sources */,
 				224303FA2282AC28001E95A7 /* AppDelegate.m in Sources */,
 				22CA2CFD2283FE2800460357 /* ICEXibViewController.m in Sources */,
 				2243044B2282ACD4001E95A7 /* UIView+TABControlAnimation.m in Sources */,
@@ -680,12 +741,13 @@
 		};
 		224304222282AC29001E95A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 102EA7C1E4C77F68EA2DE4A5 /* Pods-ZXT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F9UWGF5E8W;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/ZXT/prefixHeader.pch";
+				DEVELOPMENT_TEAM = LGN7SU938D;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZXT/PrefixHeader.pch";
 				INFOPLIST_FILE = ZXT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -695,21 +757,24 @@
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
+					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ICE.ZXT;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		224304232282AC29001E95A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E337BC15CE31478928B43C6 /* Pods-ZXT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F9UWGF5E8W;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/ZXT/prefixHeader.pch";
+				DEVELOPMENT_TEAM = LGN7SU938D;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZXT/PrefixHeader.pch";
 				INFOPLIST_FILE = ZXT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -719,10 +784,12 @@
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
+					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ICE.ZXT;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
