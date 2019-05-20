@@ -25,6 +25,7 @@ static NSString * CellID = @"ICETableViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self regsiterAnimated];
     [self afterGetData];
 }
 
@@ -35,7 +36,21 @@ static NSString * CellID = @"ICETableViewCell";
  */
 - (void)afterGetData {
     [self.tableView tab_startAnimation];   // 开启动画
+    [ICELoadingView showInView:self.view];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [ICELoadingView disMissView:self.view];
+        // 停止动画,并刷新数据
+        [self.tableView tab_endAnimation];
+        [self.view shoZWtWithType:NoDataSorce descr:@"没有数据哈" reloadBlock:^{
+            [self loadData];
+        }];
+    });
+}
+
+- (void) loadData {
+    [ICELoadingView showInView:self.view];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [ICELoadingView disMissView:self.view];
         // 模拟数据
         for (int i = 0; i < 10; i ++) {
             ICEModel * model = [[ICEModel alloc] init];
@@ -46,7 +61,7 @@ static NSString * CellID = @"ICETableViewCell";
             [self.dataArray addObject:model];
         }
         // 停止动画,并刷新数据
-        [self.tableView tab_endAnimation];
+        [self.tableView reloadData];
     });
 }
 
@@ -88,16 +103,19 @@ static NSString * CellID = @"ICETableViewCell";
         _tableView.estimatedSectionHeaderHeight = 0;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [_tableView registerClass:[ICETableViewCell class] forCellReuseIdentifier:CellID];
-        // 设置tabAnimated相关属性
-        // 可以不进行手动初始化，将使用默认属性
-        _tableView.tabAnimated = [TABTableAnimated animatedWithCellClass:[ICETableViewCell class] cellHeight:90];
-        _tableView.tabAnimated.categoryBlock = ^(UIView * _Nonnull view) {
-            view.animation(1).down(3).height(12).toShortAnimation();
-            view.animation(2).down(-5).height(12).toShortAnimation();
-        };
         [self.view addSubview:_tableView];
     }
     return _tableView;
+}
+
+- (void) regsiterAnimated{
+    // 设置tabAnimated相关属性
+    // 可以不进行手动初始化，将使用默认属性
+    self.tableView.tabAnimated = [TABTableAnimated animatedWithCellClass:[ICETableViewCell class] cellHeight:90];
+    self.tableView.tabAnimated.categoryBlock = ^(UIView * _Nonnull view) {
+        view.animation(1).down(3).height(12).toShortAnimation();
+        view.animation(2).down(-5).height(12).toShortAnimation();
+    };
 }
 
 - (NSMutableArray *)dataArray{

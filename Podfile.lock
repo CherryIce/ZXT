@@ -1,16 +1,26 @@
 PODS:
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
   - SDAutoLayout (2.2.1)
 
 DEPENDENCIES:
+  - ReactiveCocoa (~> 2.5.0)
   - SDAutoLayout
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - ReactiveCocoa
     - SDAutoLayout
 
 SPEC CHECKSUMS:
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
 
-PODFILE CHECKSUM: 3ee7c1d24898939fbca6f621729461fda4b5307d
+PODFILE CHECKSUM: 75e79f0b38f9c5e6da51d2c6977d003a81f1c05e
 
 COCOAPODS: 1.6.1
