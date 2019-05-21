@@ -1,14 +1,14 @@
 //
-//  ICEXibViewController.m
+//  ICETableXibViewController.m
 //  ZXT
 //
-//  Created by doman on 2019/5/9.
+//  Created by 1 on 2019/5/21.
 //  Copyright © 2019 Free world co., LTD. All rights reserved.
 //
 
-#import "ICEXibViewController.h"
+#import "ICETableXibViewController.h"
 
-@interface ICEXibViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface ICETableXibViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic , retain) UITableView *tableView;
 
@@ -18,7 +18,7 @@
 
 static NSString * cellID = @"ICEXibTableViewCell";
 
-@implementation ICEXibViewController
+@implementation ICETableXibViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -77,17 +77,17 @@ static NSString * cellID = @"ICEXibTableViewCell";
         _tableView.estimatedSectionHeaderHeight = 0;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [_tableView registerNib:[UINib nibWithNibName:cellID bundle:nil] forCellReuseIdentifier:cellID];
+        [self.view addSubview:_tableView];
         // 设置tabAnimated相关属性
         // 可以不进行手动初始化，将使用默认属性
         _tableView.tabAnimated = [TABTableAnimated animatedWithCellClass:[ICEXibTableViewCell class] cellHeight:100];
         _tableView.tabAnimated.animatedColor = ColorRGB(93, 131, 237, 1);
+        _tableView.tabAnimated.cancelGlobalCornerRadius = YES;
+        _tableView.tabAnimated.animatedHeight = 7.0;
         _tableView.tabAnimated.categoryBlock = ^(UIView * _Nonnull view) {
             view.animation(1).down(3).height(12).toLongAnimation();
             view.animation(2).down(-5).height(12).toShortAnimation();
         };
-//        _tableView.tabAnimated.cancelGlobalCornerRadius = YES;
-//        _tableView.tabAnimated.animatedHeight = 14.f;
-        [self.view addSubview:_tableView];
     }
     return _tableView;
 }
@@ -103,5 +103,10 @@ static NSString * cellID = @"ICEXibTableViewCell";
     NSLog(@"==========  dealloc  ==========");
 }
 
-@end
+//内存警告
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    NSLog(@"%@内存泄漏了....",self);
+}
 
+@end

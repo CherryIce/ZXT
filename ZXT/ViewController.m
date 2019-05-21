@@ -65,7 +65,6 @@
     }
 }
 
-
 #pragma mark - Initize Methods
 
 /**
@@ -111,10 +110,15 @@
              @"ICEZXTViewController",
              @"ICEBZTViewController",
              @"ICECodeViewController",
-             @"ICEXibViewController",
+             @"ICETableXibViewController",
              @"ICECollectionViewController",
              @"ICEViewController"];
 }
 
+//内存警告
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    NSLog(@"内存泄漏了....");
+}
 
 @end

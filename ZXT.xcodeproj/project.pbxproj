@@ -19,7 +19,6 @@
 		224304622282B19A001E95A7 /* ICEZXTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304612282B19A001E95A7 /* ICEZXTViewController.m */; };
 		224304652282B1A7001E95A7 /* ICEBZTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304642282B1A7001E95A7 /* ICEBZTViewController.m */; };
 		22CA2CFA2283FE1800460357 /* ICECodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CA2CF92283FE1800460357 /* ICECodeViewController.m */; };
-		22CA2CFD2283FE2800460357 /* ICEXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CA2CFC2283FE2800460357 /* ICEXibViewController.m */; };
 		22CA2D032283FE4A00460357 /* ICEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CA2D022283FE4A00460357 /* ICEViewController.m */; };
 		6328F46E228D5FDC00CDE193 /* ICETableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F46D228D5FDC00CDE193 /* ICETableViewCell.m */; };
 		6328F473228E48A800CDE193 /* ICEModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F472228E48A800CDE193 /* ICEModel.m */; };
@@ -28,13 +27,13 @@
 		6328F490228E87AB00CDE193 /* ICETools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F48F228E87AB00CDE193 /* ICETools.m */; };
 		6328F493228E8DDC00CDE193 /* ICETestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F492228E8DDC00CDE193 /* ICETestView.m */; };
 		6328F4A3228EB5CE00CDE193 /* ICECollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F4A2228EB5CE00CDE193 /* ICECollectionViewController.m */; };
-		6328F4A7228EB5D600CDE193 /* ICECollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F4A4228EB5D600CDE193 /* ICECollectionViewCell.m */; };
-		6328F4A8228EB5D600CDE193 /* ICECollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6328F4A6228EB5D600CDE193 /* ICECollectionViewCell.xib */; };
 		636B2152229284D100E4A07B /* UIView+ICEZwt.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B2151229284D100E4A07B /* UIView+ICEZwt.m */; };
 		636B21552292A19800E4A07B /* ICELoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B21542292A19800E4A07B /* ICELoadingView.m */; };
 		636B215A2293A97C00E4A07B /* ICECodeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B21592293A97C00E4A07B /* ICECodeCollectionViewCell.m */; };
 		636B215D2293D11400E4A07B /* ICEXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B215C2293D11400E4A07B /* ICEXibView.m */; };
 		636B215F2293D13B00E4A07B /* ICEXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636B215E2293D13B00E4A07B /* ICEXibView.xib */; };
+		636B21622293E9F100E4A07B /* 没网.png in Resources */ = {isa = PBXBuildFile; fileRef = 636B21612293E9F000E4A07B /* 没网.png */; };
+		636B2165229400B300E4A07B /* ICETableXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B2164229400B300E4A07B /* ICETableXibViewController.m */; };
 		ED843D73A3575E30BEB8ABFD /* Pods_ZXT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B2899D578FD9EDC9FC80E2 /* Pods_ZXT.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,8 +81,6 @@
 		224304642282B1A7001E95A7 /* ICEBZTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEBZTViewController.m; sourceTree = "<group>"; };
 		22CA2CF82283FE1800460357 /* ICECodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICECodeViewController.h; sourceTree = "<group>"; };
 		22CA2CF92283FE1800460357 /* ICECodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICECodeViewController.m; sourceTree = "<group>"; };
-		22CA2CFB2283FE2800460357 /* ICEXibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEXibViewController.h; sourceTree = "<group>"; };
-		22CA2CFC2283FE2800460357 /* ICEXibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEXibViewController.m; sourceTree = "<group>"; };
 		22CA2D012283FE4A00460357 /* ICEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEViewController.h; sourceTree = "<group>"; };
 		22CA2D022283FE4A00460357 /* ICEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEViewController.m; sourceTree = "<group>"; };
 		6328F46C228D5FDC00CDE193 /* ICETableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICETableViewCell.h; sourceTree = "<group>"; };
@@ -99,9 +96,6 @@
 		6328F492228E8DDC00CDE193 /* ICETestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICETestView.m; sourceTree = "<group>"; };
 		6328F4A1228EB5CE00CDE193 /* ICECollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICECollectionViewController.h; sourceTree = "<group>"; };
 		6328F4A2228EB5CE00CDE193 /* ICECollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICECollectionViewController.m; sourceTree = "<group>"; };
-		6328F4A4228EB5D600CDE193 /* ICECollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICECollectionViewCell.m; sourceTree = "<group>"; };
-		6328F4A5228EB5D600CDE193 /* ICECollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICECollectionViewCell.h; sourceTree = "<group>"; };
-		6328F4A6228EB5D600CDE193 /* ICECollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICECollectionViewCell.xib; sourceTree = "<group>"; };
 		636B2150229284D100E4A07B /* UIView+ICEZwt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ICEZwt.h"; sourceTree = "<group>"; };
 		636B2151229284D100E4A07B /* UIView+ICEZwt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ICEZwt.m"; sourceTree = "<group>"; };
 		636B21532292A19800E4A07B /* ICELoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICELoadingView.h; sourceTree = "<group>"; };
@@ -111,6 +105,9 @@
 		636B215B2293D11400E4A07B /* ICEXibView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEXibView.h; sourceTree = "<group>"; };
 		636B215C2293D11400E4A07B /* ICEXibView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEXibView.m; sourceTree = "<group>"; };
 		636B215E2293D13B00E4A07B /* ICEXibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICEXibView.xib; sourceTree = "<group>"; };
+		636B21612293E9F000E4A07B /* 没网.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "没网.png"; sourceTree = "<group>"; };
+		636B2163229400B300E4A07B /* ICETableXibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICETableXibViewController.h; sourceTree = "<group>"; };
+		636B2164229400B300E4A07B /* ICETableXibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICETableXibViewController.m; sourceTree = "<group>"; };
 		9E337BC15CE31478928B43C6 /* Pods-ZXT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXT.release.xcconfig"; path = "Target Support Files/Pods-ZXT/Pods-ZXT.release.xcconfig"; sourceTree = "<group>"; };
 		F9B2899D578FD9EDC9FC80E2 /* Pods_ZXT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZXT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -166,6 +163,8 @@
 		224303F72282AC28001E95A7 /* ZXT */ = {
 			isa = PBXGroup;
 			children = (
+				2243045B2282ADF3001E95A7 /* PrefixHeader.pch */,
+				636B21602293E94100E4A07B /* 占位图 */,
 				2243045F2282B163001E95A7 /* 线状图 */,
 				22CA2CF72283FDEC00460357 /* 骨架动画测试 */,
 				224303F82282AC28001E95A7 /* AppDelegate.h */,
@@ -177,9 +176,6 @@
 				224304032282AC29001E95A7 /* LaunchScreen.storyboard */,
 				224304062282AC29001E95A7 /* Info.plist */,
 				224304072282AC29001E95A7 /* main.m */,
-				2243045B2282ADF3001E95A7 /* PrefixHeader.pch */,
-				636B2150229284D100E4A07B /* UIView+ICEZwt.h */,
-				636B2151229284D100E4A07B /* UIView+ICEZwt.m */,
 			);
 			path = ZXT;
 			sourceTree = "<group>";
@@ -222,12 +218,12 @@
 				6328F46B228D5FAE00CDE193 /* views */,
 				22CA2CF82283FE1800460357 /* ICECodeViewController.h */,
 				22CA2CF92283FE1800460357 /* ICECodeViewController.m */,
-				22CA2CFB2283FE2800460357 /* ICEXibViewController.h */,
-				22CA2CFC2283FE2800460357 /* ICEXibViewController.m */,
-				22CA2D012283FE4A00460357 /* ICEViewController.h */,
-				22CA2D022283FE4A00460357 /* ICEViewController.m */,
 				6328F4A1228EB5CE00CDE193 /* ICECollectionViewController.h */,
 				6328F4A2228EB5CE00CDE193 /* ICECollectionViewController.m */,
+				22CA2D012283FE4A00460357 /* ICEViewController.h */,
+				22CA2D022283FE4A00460357 /* ICEViewController.m */,
+				636B2163229400B300E4A07B /* ICETableXibViewController.h */,
+				636B2164229400B300E4A07B /* ICETableXibViewController.m */,
 			);
 			path = "骨架动画测试";
 			sourceTree = "<group>";
@@ -235,9 +231,6 @@
 		6328F46B228D5FAE00CDE193 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				6328F4A5228EB5D600CDE193 /* ICECollectionViewCell.h */,
-				6328F4A4228EB5D600CDE193 /* ICECollectionViewCell.m */,
-				6328F4A6228EB5D600CDE193 /* ICECollectionViewCell.xib */,
 				6328F46C228D5FDC00CDE193 /* ICETableViewCell.h */,
 				6328F46D228D5FDC00CDE193 /* ICETableViewCell.m */,
 				6328F488228E5B1600CDE193 /* ICEXibTableViewCell.h */,
@@ -265,6 +258,16 @@
 				6328F48F228E87AB00CDE193 /* ICETools.m */,
 			);
 			path = object;
+			sourceTree = "<group>";
+		};
+		636B21602293E94100E4A07B /* 占位图 */ = {
+			isa = PBXGroup;
+			children = (
+				636B21612293E9F000E4A07B /* 没网.png */,
+				636B2150229284D100E4A07B /* UIView+ICEZwt.h */,
+				636B2151229284D100E4A07B /* UIView+ICEZwt.m */,
+			);
+			path = "占位图";
 			sourceTree = "<group>";
 		};
 		ACC6EE51158D2CFD9FE80111 /* Pods */ = {
@@ -395,7 +398,7 @@
 				224304002282AC28001E95A7 /* Main.storyboard in Resources */,
 				6328F48C228E5B1600CDE193 /* ICEXibTableViewCell.xib in Resources */,
 				636B215F2293D13B00E4A07B /* ICEXibView.xib in Resources */,
-				6328F4A8228EB5D600CDE193 /* ICECollectionViewCell.xib in Resources */,
+				636B21622293E9F100E4A07B /* 没网.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,11 +479,11 @@
 				636B215D2293D11400E4A07B /* ICEXibView.m in Sources */,
 				22CA2CFA2283FE1800460357 /* ICECodeViewController.m in Sources */,
 				6328F490228E87AB00CDE193 /* ICETools.m in Sources */,
-				6328F4A7228EB5D600CDE193 /* ICECollectionViewCell.m in Sources */,
 				224303FD2282AC28001E95A7 /* ViewController.m in Sources */,
 				224304082282AC29001E95A7 /* main.m in Sources */,
 				6328F46E228D5FDC00CDE193 /* ICETableViewCell.m in Sources */,
 				224304622282B19A001E95A7 /* ICEZXTViewController.m in Sources */,
+				636B2165229400B300E4A07B /* ICETableXibViewController.m in Sources */,
 				6328F473228E48A800CDE193 /* ICEModel.m in Sources */,
 				6328F48B228E5B1600CDE193 /* ICEXibTableViewCell.m in Sources */,
 				636B21552292A19800E4A07B /* ICELoadingView.m in Sources */,
@@ -490,7 +493,6 @@
 				636B2152229284D100E4A07B /* UIView+ICEZwt.m in Sources */,
 				224304652282B1A7001E95A7 /* ICEBZTViewController.m in Sources */,
 				224303FA2282AC28001E95A7 /* AppDelegate.m in Sources */,
-				22CA2CFD2283FE2800460357 /* ICEXibViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

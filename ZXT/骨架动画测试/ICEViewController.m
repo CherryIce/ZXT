@@ -41,9 +41,11 @@
         [self.view addSubview:_xibView];
         
         _xibView.tabAnimated = TABViewAnimated.new;
+        _xibView.tabAnimated.superAnimationType = TABViewSuperAnimationTypeDrop;
         _xibView.tabAnimated.categoryBlock = ^(UIView * _Nonnull view) {
-            view.animation(1).down(3).height(20).toShortAnimation();
-            view.animation(2).down(3).height(12).toLongAnimation();
+            view.animation(0).dropStayTime(0.5);
+            view.animation(1).down(3).height(20).toShortAnimation().removeOnDrop();
+            view.animation(2).down(3).height(12).toLongAnimation().removeOnDrop();
         };
     }
     return _xibView;

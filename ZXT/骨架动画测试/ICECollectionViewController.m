@@ -84,6 +84,7 @@ static NSString * cellID = @"ICECodeCollectionViewCell";
         [self.view addSubview:_collectionView];
         
         // 初始化并设置动画相关属性
+        //animatedWithCellClassArray: 多section的处理同理,也可以多section部分处理
         _collectionView.tabAnimated =
         [TABCollectionAnimated animatedWithCellClass:[ICECodeCollectionViewCell class]
                                             cellSize:CGSizeMake(kScreenWidth - 10, 100)];

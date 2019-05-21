@@ -71,6 +71,7 @@ static void *originalScrollEnabledKey = &originalScrollEnabledKey;
     
     //------- 图标 -------//
     UIImageView *imageView = [[UIImageView alloc] init];
+    imageView.contentMode = UIViewContentModeScaleAspectFit;
     [self.cq_placeholderView addSubview:imageView];
     
     imageView.sd_layout.leftSpaceToView(self.cq_placeholderView, self.cq_placeholderView.centerX - 50).topSpaceToView(self.cq_placeholderView, self.cq_placeholderView.centerY - 60).widthIs(100).heightIs(100);
@@ -79,6 +80,7 @@ static void *originalScrollEnabledKey = &originalScrollEnabledKey;
     //------- 描述 -------//
     UILabel *descLabel = [[UILabel alloc] init];
     descLabel.font = [UIFont systemFontOfSize:13];
+    descLabel.textColor = [UIColor lightGrayColor];
     descLabel.textAlignment = NSTextAlignmentCenter;
     descLabel.numberOfLines = 0;
     [self.cq_placeholderView addSubview:descLabel];
@@ -109,11 +111,11 @@ static void *originalScrollEnabledKey = &originalScrollEnabledKey;
     }];
     reloadButton.sd_layout.leftSpaceToView(self.cq_placeholderView, self.cq_placeholderView.centerX - 60).topSpaceToView(descLabel, 10).widthIs(120).heightIs(30);
     
-    //------- 根据type设置不同UI -------//
+    //------- 根据type设置不同UI 图片名字可传进来 -------//
     switch (type) {
         case NoNetwork: // 网络不好
         {
-            NSString *path = [[NSBundle mainBundle] pathForResource:@"无网" ofType:@"png"];
+            NSString *path = [[NSBundle mainBundle] pathForResource:@"没网" ofType:@"png"];
             imageView.image = [UIImage imageWithContentsOfFile:path];
             descLabel.text = @"请检查你的网络连接";
         }
@@ -121,7 +123,7 @@ static void *originalScrollEnabledKey = &originalScrollEnabledKey;
             
         case NoDataSorce: // 没数据
         {
-            NSString *path = [[NSBundle mainBundle] pathForResource:@"无商品" ofType:@"png"];
+            NSString *path = [[NSBundle mainBundle] pathForResource:@"没网" ofType:@"png"];
             imageView.image = [UIImage imageWithContentsOfFile:path];
             descLabel.text = descr;
         }

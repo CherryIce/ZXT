@@ -1,8 +1,8 @@
 //
-//  ICEXibViewController.h
+//  ICETableXibViewController.h
 //  ZXT
 //
-//  Created by doman on 2019/5/9.
+//  Created by 1 on 2019/5/21.
 //  Copyright © 2019 Free world co., LTD. All rights reserved.
 //
 
@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ICEXibViewController : UIViewController
+@interface ICETableXibViewController : UIViewController
 
 @end
 
