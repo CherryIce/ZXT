@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-#import "ICECollectionViewCell.h"
+//#import "ICECollectionViewCell.h"
+
+#import "ICECodeCollectionViewCell.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

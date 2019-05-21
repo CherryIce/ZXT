@@ -16,7 +16,7 @@
 
 @end
 
-static NSString * cellID = @"ICECollectionViewCell";
+static NSString * cellID = @"ICECodeCollectionViewCell";
 
 @implementation ICECollectionViewController
 
@@ -32,15 +32,9 @@ static NSString * cellID = @"ICECollectionViewCell";
  获取到数据后
  */
 - (void)afterGetData {
-    for (int i = 0; i < 10; i ++) {
-        ICEModel * model = [[ICEModel alloc] init];
-        [self.dataArray addObject:model];
-    }
-    [self.collectionView reloadData];
-    
+    [self.collectionView tab_startAnimation];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         // 模拟数据
-        [self.dataArray removeAllObjects];
         [self loadData];
     });
 }
@@ -48,11 +42,12 @@ static NSString * cellID = @"ICECollectionViewCell";
 - (void) loadData {
     for (int i = 0; i < 10; i ++) {
         ICEModel * model = [[ICEModel alloc] init];
+        model.titleName = @"xxx";
+        model.titleDescr = @"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
         model.cellH = 100;
         [self.dataArray addObject:model];
     }
-    // 停止动画,并刷新数据
-    [self.collectionView reloadData];
+    [self.collectionView tab_endAnimation];
 }
 
 #pragma mark - UICollectionViewDelegate & UICollectionViewDataSource
@@ -61,24 +56,14 @@ static NSString * cellID = @"ICECollectionViewCell";
     return self.dataArray.count;
 }
 
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(kScreenWidth, 100);
-}
-
-- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-    return UIEdgeInsetsMake(0, 0, 0, 0);
-}
-
-- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
-    return .1;
+- ( UIEdgeInsets )collectionView:( UICollectionView *)collectionView layout:( UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:( NSInteger )section {
+    return UIEdgeInsetsMake (5, 5, 5, 5);
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    ICECollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
+    ICECodeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
     ICEModel * model = self.dataArray[indexPath.row];
-    if (model.cellH > 0) {
-        cell.model = model;
-    }
+    cell.model = model;
     return cell;
 }
 
@@ -87,16 +72,26 @@ static NSString * cellID = @"ICECollectionViewCell";
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) collectionViewLayout:layout];
+        layout.itemSize = CGSizeMake(kScreenWidth - 10, 100);
+     
+        _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
         _collectionView.backgroundColor = [UIColor whiteColor];
-        _collectionView.dataSource = self;
         _collectionView.delegate = self;
+        _collectionView.dataSource = self;
         _collectionView.showsHorizontalScrollIndicator = NO;
         _collectionView.showsVerticalScrollIndicator = NO;
         _collectionView.bounces = true;
         [self.view addSubview:_collectionView];
         
-        [_collectionView registerNib:[UINib nibWithNibName:cellID bundle:nil] forCellWithReuseIdentifier:cellID];
+        // 初始化并设置动画相关属性
+        _collectionView.tabAnimated =
+        [TABCollectionAnimated animatedWithCellClass:[ICECodeCollectionViewCell class]
+                                            cellSize:CGSizeMake(kScreenWidth - 10, 100)];
+        _collectionView.tabAnimated.superAnimationType = TABViewSuperAnimationTypeDrop;
+        _collectionView.tabAnimated.animatedHeight = 7.0;
+        _collectionView.tabAnimated.cancelGlobalCornerRadius = YES;
+        _collectionView.tabAnimated.categoryBlock = ^(UIView * _Nonnull view) {
+        };
     }
     return _collectionView;
 }

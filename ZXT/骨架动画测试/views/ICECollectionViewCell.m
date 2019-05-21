@@ -21,8 +21,6 @@
 
 - (void)setModel:(ICEModel *)model {
     _model = model;
-    name.backgroundColor = [UIColor clearColor];
-    descr.backgroundColor = [UIColor clearColor];
 }
 
 @end

@@ -16,6 +16,8 @@
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 #define kNavHegith [UIApplication sharedApplication].statusBarFrame.size.height + 44
 
+#define ColorRGB(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
 #import "TABAnimated.h"
 #import "SDAutoLayout.h"
 

@@ -7,20 +7,24 @@ PODS:
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
   - SDAutoLayout (2.2.1)
+  - TABAnimated (2.0.7)
 
 DEPENDENCIES:
   - ReactiveCocoa (~> 2.5.0)
   - SDAutoLayout
+  - TABAnimated
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - ReactiveCocoa
     - SDAutoLayout
+    - TABAnimated
 
 SPEC CHECKSUMS:
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
+  TABAnimated: 6b7514eef96f82c2a8baa5ae62f0f06bc171d8e3
 
-PODFILE CHECKSUM: 75e79f0b38f9c5e6da51d2c6977d003a81f1c05e
+PODFILE CHECKSUM: e44a0c307f0235314ed1c4ddee4b8bdb16d5bb26
 
 COCOAPODS: 1.6.1

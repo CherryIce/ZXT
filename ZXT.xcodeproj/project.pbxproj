@@ -15,22 +15,6 @@
 		224304082282AC29001E95A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304072282AC29001E95A7 /* main.m */; };
 		224304122282AC29001E95A7 /* ZXTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304112282AC29001E95A7 /* ZXTTests.m */; };
 		2243041D2282AC29001E95A7 /* ZXTUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243041C2282AC29001E95A7 /* ZXTUITests.m */; };
-		2243044B2282ACD4001E95A7 /* UIView+TABControlAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243042B2282ACD4001E95A7 /* UIView+TABControlAnimation.m */; };
-		2243044C2282ACD4001E95A7 /* TABAnimationMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243042C2282ACD4001E95A7 /* TABAnimationMethod.m */; };
-		2243044D2282ACD4001E95A7 /* UICollectionView+TABAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243042E2282ACD4001E95A7 /* UICollectionView+TABAnimated.m */; };
-		2243044E2282ACD4001E95A7 /* UICollectionViewCell+TABLayoutSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243042F2282ACD4001E95A7 /* UICollectionViewCell+TABLayoutSubviews.m */; };
-		2243044F2282ACD4001E95A7 /* TABComponentLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304312282ACD4001E95A7 /* TABComponentLayer.m */; };
-		224304502282ACD4001E95A7 /* NSArray+TABAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304322282ACD4001E95A7 /* NSArray+TABAnimated.m */; };
-		224304512282ACD4001E95A7 /* TABViewAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304332282ACD4001E95A7 /* TABViewAnimated.m */; };
-		224304522282ACD4001E95A7 /* UITableViewCell+TABLayoutSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304342282ACD4001E95A7 /* UITableViewCell+TABLayoutSubviews.m */; };
-		224304532282ACD4001E95A7 /* TABCollectionAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304362282ACD4001E95A7 /* TABCollectionAnimated.m */; };
-		224304542282ACD4001E95A7 /* TABAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304372282ACD4001E95A7 /* TABAnimated.m */; };
-		224304552282ACD4001E95A7 /* UIView+TABAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304382282ACD4001E95A7 /* UIView+TABAnimated.m */; };
-		224304562282ACD4001E95A7 /* TABTableAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243043A2282ACD4001E95A7 /* TABTableAnimated.m */; };
-		224304572282ACD4001E95A7 /* TABManagerMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243043B2282ACD4001E95A7 /* TABManagerMethod.m */; };
-		224304582282ACD4001E95A7 /* UITableView+TABAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304412282ACD4001E95A7 /* UITableView+TABAnimated.m */; };
-		224304592282ACD4001E95A7 /* UIView+TABLayoutSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304472282ACD4001E95A7 /* UIView+TABLayoutSubviews.m */; };
-		2243045A2282ACD4001E95A7 /* TABLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304492282ACD4001E95A7 /* TABLayer.m */; };
 		2243045E2282B15B001E95A7 /* ICEZZTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243045D2282B15B001E95A7 /* ICEZZTViewController.m */; };
 		224304622282B19A001E95A7 /* ICEZXTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304612282B19A001E95A7 /* ICEZXTViewController.m */; };
 		224304652282B1A7001E95A7 /* ICEBZTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304642282B1A7001E95A7 /* ICEBZTViewController.m */; };
@@ -43,13 +27,14 @@
 		6328F48C228E5B1600CDE193 /* ICEXibTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6328F48A228E5B1600CDE193 /* ICEXibTableViewCell.xib */; };
 		6328F490228E87AB00CDE193 /* ICETools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F48F228E87AB00CDE193 /* ICETools.m */; };
 		6328F493228E8DDC00CDE193 /* ICETestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F492228E8DDC00CDE193 /* ICETestView.m */; };
-		6328F497228E8DF000CDE193 /* ICEViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F495228E8DF000CDE193 /* ICEViewCell.m */; };
-		6328F498228E8DF000CDE193 /* ICEViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6328F496228E8DF000CDE193 /* ICEViewCell.xib */; };
 		6328F4A3228EB5CE00CDE193 /* ICECollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F4A2228EB5CE00CDE193 /* ICECollectionViewController.m */; };
 		6328F4A7228EB5D600CDE193 /* ICECollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F4A4228EB5D600CDE193 /* ICECollectionViewCell.m */; };
 		6328F4A8228EB5D600CDE193 /* ICECollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6328F4A6228EB5D600CDE193 /* ICECollectionViewCell.xib */; };
 		636B2152229284D100E4A07B /* UIView+ICEZwt.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B2151229284D100E4A07B /* UIView+ICEZwt.m */; };
 		636B21552292A19800E4A07B /* ICELoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B21542292A19800E4A07B /* ICELoadingView.m */; };
+		636B215A2293A97C00E4A07B /* ICECodeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B21592293A97C00E4A07B /* ICECodeCollectionViewCell.m */; };
+		636B215D2293D11400E4A07B /* ICEXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B215C2293D11400E4A07B /* ICEXibView.m */; };
+		636B215F2293D13B00E4A07B /* ICEXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636B215E2293D13B00E4A07B /* ICEXibView.xib */; };
 		ED843D73A3575E30BEB8ABFD /* Pods_ZXT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B2899D578FD9EDC9FC80E2 /* Pods_ZXT.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,38 +73,6 @@
 		224304182282AC29001E95A7 /* ZXTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZXTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2243041C2282AC29001E95A7 /* ZXTUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXTUITests.m; sourceTree = "<group>"; };
 		2243041E2282AC29001E95A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2243042B2282ACD4001E95A7 /* UIView+TABControlAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TABControlAnimation.m"; sourceTree = "<group>"; };
-		2243042C2282ACD4001E95A7 /* TABAnimationMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TABAnimationMethod.m; sourceTree = "<group>"; };
-		2243042D2282ACD4001E95A7 /* TABManagerMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABManagerMethod.h; sourceTree = "<group>"; };
-		2243042E2282ACD4001E95A7 /* UICollectionView+TABAnimated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+TABAnimated.m"; sourceTree = "<group>"; };
-		2243042F2282ACD4001E95A7 /* UICollectionViewCell+TABLayoutSubviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+TABLayoutSubviews.m"; sourceTree = "<group>"; };
-		224304302282ACD4001E95A7 /* UITableView+TABAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+TABAnimated.h"; sourceTree = "<group>"; };
-		224304312282ACD4001E95A7 /* TABComponentLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TABComponentLayer.m; sourceTree = "<group>"; };
-		224304322282ACD4001E95A7 /* NSArray+TABAnimated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+TABAnimated.m"; sourceTree = "<group>"; };
-		224304332282ACD4001E95A7 /* TABViewAnimated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TABViewAnimated.m; sourceTree = "<group>"; };
-		224304342282ACD4001E95A7 /* UITableViewCell+TABLayoutSubviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+TABLayoutSubviews.m"; sourceTree = "<group>"; };
-		224304352282ACD4001E95A7 /* UIView+TABLayoutSubviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TABLayoutSubviews.h"; sourceTree = "<group>"; };
-		224304362282ACD4001E95A7 /* TABCollectionAnimated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TABCollectionAnimated.m; sourceTree = "<group>"; };
-		224304372282ACD4001E95A7 /* TABAnimated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TABAnimated.m; sourceTree = "<group>"; };
-		224304382282ACD4001E95A7 /* UIView+TABAnimated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TABAnimated.m"; sourceTree = "<group>"; };
-		224304392282ACD4001E95A7 /* TABLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABLayer.h; sourceTree = "<group>"; };
-		2243043A2282ACD4001E95A7 /* TABTableAnimated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TABTableAnimated.m; sourceTree = "<group>"; };
-		2243043B2282ACD4001E95A7 /* TABManagerMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TABManagerMethod.m; sourceTree = "<group>"; };
-		2243043C2282ACD4001E95A7 /* TABAnimationMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABAnimationMethod.h; sourceTree = "<group>"; };
-		2243043D2282ACD4001E95A7 /* UIView+TABControlAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TABControlAnimation.h"; sourceTree = "<group>"; };
-		2243043E2282ACD4001E95A7 /* NSArray+TABAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+TABAnimated.h"; sourceTree = "<group>"; };
-		2243043F2282ACD4001E95A7 /* TABComponentLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABComponentLayer.h; sourceTree = "<group>"; };
-		224304402282ACD4001E95A7 /* UICollectionViewCell+TABLayoutSubviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+TABLayoutSubviews.h"; sourceTree = "<group>"; };
-		224304412282ACD4001E95A7 /* UITableView+TABAnimated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+TABAnimated.m"; sourceTree = "<group>"; };
-		224304422282ACD4001E95A7 /* UICollectionView+TABAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+TABAnimated.h"; sourceTree = "<group>"; };
-		224304432282ACD4001E95A7 /* TABAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABAnimated.h; sourceTree = "<group>"; };
-		224304442282ACD4001E95A7 /* TABCollectionAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABCollectionAnimated.h; sourceTree = "<group>"; };
-		224304452282ACD4001E95A7 /* TABViewAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABViewAnimated.h; sourceTree = "<group>"; };
-		224304462282ACD4001E95A7 /* UITableViewCell+TABLayoutSubviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+TABLayoutSubviews.h"; sourceTree = "<group>"; };
-		224304472282ACD4001E95A7 /* UIView+TABLayoutSubviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TABLayoutSubviews.m"; sourceTree = "<group>"; };
-		224304482282ACD4001E95A7 /* TABTableAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABTableAnimated.h; sourceTree = "<group>"; };
-		224304492282ACD4001E95A7 /* TABLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TABLayer.m; sourceTree = "<group>"; };
-		2243044A2282ACD4001E95A7 /* UIView+TABAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TABAnimated.h"; sourceTree = "<group>"; };
 		2243045B2282ADF3001E95A7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		2243045C2282B15B001E95A7 /* ICEZZTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEZZTViewController.h; sourceTree = "<group>"; };
 		2243045D2282B15B001E95A7 /* ICEZZTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEZZTViewController.m; sourceTree = "<group>"; };
@@ -144,9 +97,6 @@
 		6328F48F228E87AB00CDE193 /* ICETools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICETools.m; sourceTree = "<group>"; };
 		6328F491228E8DDC00CDE193 /* ICETestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICETestView.h; sourceTree = "<group>"; };
 		6328F492228E8DDC00CDE193 /* ICETestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICETestView.m; sourceTree = "<group>"; };
-		6328F494228E8DF000CDE193 /* ICEViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEViewCell.h; sourceTree = "<group>"; };
-		6328F495228E8DF000CDE193 /* ICEViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEViewCell.m; sourceTree = "<group>"; };
-		6328F496228E8DF000CDE193 /* ICEViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICEViewCell.xib; sourceTree = "<group>"; };
 		6328F4A1228EB5CE00CDE193 /* ICECollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICECollectionViewController.h; sourceTree = "<group>"; };
 		6328F4A2228EB5CE00CDE193 /* ICECollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICECollectionViewController.m; sourceTree = "<group>"; };
 		6328F4A4228EB5D600CDE193 /* ICECollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICECollectionViewCell.m; sourceTree = "<group>"; };
@@ -156,6 +106,11 @@
 		636B2151229284D100E4A07B /* UIView+ICEZwt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ICEZwt.m"; sourceTree = "<group>"; };
 		636B21532292A19800E4A07B /* ICELoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICELoadingView.h; sourceTree = "<group>"; };
 		636B21542292A19800E4A07B /* ICELoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICELoadingView.m; sourceTree = "<group>"; };
+		636B21582293A97C00E4A07B /* ICECodeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICECodeCollectionViewCell.h; sourceTree = "<group>"; };
+		636B21592293A97C00E4A07B /* ICECodeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICECodeCollectionViewCell.m; sourceTree = "<group>"; };
+		636B215B2293D11400E4A07B /* ICEXibView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEXibView.h; sourceTree = "<group>"; };
+		636B215C2293D11400E4A07B /* ICEXibView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEXibView.m; sourceTree = "<group>"; };
+		636B215E2293D13B00E4A07B /* ICEXibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICEXibView.xib; sourceTree = "<group>"; };
 		9E337BC15CE31478928B43C6 /* Pods-ZXT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXT.release.xcconfig"; path = "Target Support Files/Pods-ZXT/Pods-ZXT.release.xcconfig"; sourceTree = "<group>"; };
 		F9B2899D578FD9EDC9FC80E2 /* Pods_ZXT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZXT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -211,7 +166,6 @@
 		224303F72282AC28001E95A7 /* ZXT */ = {
 			isa = PBXGroup;
 			children = (
-				2243042A2282ACD4001E95A7 /* TABAnimated */,
 				2243045F2282B163001E95A7 /* 线状图 */,
 				22CA2CF72283FDEC00460357 /* 骨架动画测试 */,
 				224303F82282AC28001E95A7 /* AppDelegate.h */,
@@ -246,45 +200,6 @@
 				2243041E2282AC29001E95A7 /* Info.plist */,
 			);
 			path = ZXTUITests;
-			sourceTree = "<group>";
-		};
-		2243042A2282ACD4001E95A7 /* TABAnimated */ = {
-			isa = PBXGroup;
-			children = (
-				2243042B2282ACD4001E95A7 /* UIView+TABControlAnimation.m */,
-				2243042C2282ACD4001E95A7 /* TABAnimationMethod.m */,
-				2243042D2282ACD4001E95A7 /* TABManagerMethod.h */,
-				2243042E2282ACD4001E95A7 /* UICollectionView+TABAnimated.m */,
-				2243042F2282ACD4001E95A7 /* UICollectionViewCell+TABLayoutSubviews.m */,
-				224304302282ACD4001E95A7 /* UITableView+TABAnimated.h */,
-				224304312282ACD4001E95A7 /* TABComponentLayer.m */,
-				224304322282ACD4001E95A7 /* NSArray+TABAnimated.m */,
-				224304332282ACD4001E95A7 /* TABViewAnimated.m */,
-				224304342282ACD4001E95A7 /* UITableViewCell+TABLayoutSubviews.m */,
-				224304352282ACD4001E95A7 /* UIView+TABLayoutSubviews.h */,
-				224304362282ACD4001E95A7 /* TABCollectionAnimated.m */,
-				224304372282ACD4001E95A7 /* TABAnimated.m */,
-				224304382282ACD4001E95A7 /* UIView+TABAnimated.m */,
-				224304392282ACD4001E95A7 /* TABLayer.h */,
-				2243043A2282ACD4001E95A7 /* TABTableAnimated.m */,
-				2243043B2282ACD4001E95A7 /* TABManagerMethod.m */,
-				2243043C2282ACD4001E95A7 /* TABAnimationMethod.h */,
-				2243043D2282ACD4001E95A7 /* UIView+TABControlAnimation.h */,
-				2243043E2282ACD4001E95A7 /* NSArray+TABAnimated.h */,
-				2243043F2282ACD4001E95A7 /* TABComponentLayer.h */,
-				224304402282ACD4001E95A7 /* UICollectionViewCell+TABLayoutSubviews.h */,
-				224304412282ACD4001E95A7 /* UITableView+TABAnimated.m */,
-				224304422282ACD4001E95A7 /* UICollectionView+TABAnimated.h */,
-				224304432282ACD4001E95A7 /* TABAnimated.h */,
-				224304442282ACD4001E95A7 /* TABCollectionAnimated.h */,
-				224304452282ACD4001E95A7 /* TABViewAnimated.h */,
-				224304462282ACD4001E95A7 /* UITableViewCell+TABLayoutSubviews.h */,
-				224304472282ACD4001E95A7 /* UIView+TABLayoutSubviews.m */,
-				224304482282ACD4001E95A7 /* TABTableAnimated.h */,
-				224304492282ACD4001E95A7 /* TABLayer.m */,
-				2243044A2282ACD4001E95A7 /* UIView+TABAnimated.h */,
-			);
-			path = TABAnimated;
 			sourceTree = "<group>";
 		};
 		2243045F2282B163001E95A7 /* 线状图 */ = {
@@ -330,11 +245,13 @@
 				6328F48A228E5B1600CDE193 /* ICEXibTableViewCell.xib */,
 				6328F491228E8DDC00CDE193 /* ICETestView.h */,
 				6328F492228E8DDC00CDE193 /* ICETestView.m */,
-				6328F494228E8DF000CDE193 /* ICEViewCell.h */,
-				6328F495228E8DF000CDE193 /* ICEViewCell.m */,
-				6328F496228E8DF000CDE193 /* ICEViewCell.xib */,
 				636B21532292A19800E4A07B /* ICELoadingView.h */,
 				636B21542292A19800E4A07B /* ICELoadingView.m */,
+				636B21582293A97C00E4A07B /* ICECodeCollectionViewCell.h */,
+				636B21592293A97C00E4A07B /* ICECodeCollectionViewCell.m */,
+				636B215B2293D11400E4A07B /* ICEXibView.h */,
+				636B215C2293D11400E4A07B /* ICEXibView.m */,
+				636B215E2293D13B00E4A07B /* ICEXibView.xib */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -477,8 +394,8 @@
 				224304022282AC29001E95A7 /* Assets.xcassets in Resources */,
 				224304002282AC28001E95A7 /* Main.storyboard in Resources */,
 				6328F48C228E5B1600CDE193 /* ICEXibTableViewCell.xib in Resources */,
+				636B215F2293D13B00E4A07B /* ICEXibView.xib in Resources */,
 				6328F4A8228EB5D600CDE193 /* ICECollectionViewCell.xib in Resources */,
-				6328F498228E8DF000CDE193 /* ICEViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +449,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-ZXT/Pods-ZXT-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/SDAutoLayout/SDAutoLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/TABAnimated/TABAnimated.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -539,6 +457,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDAutoLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TABAnimated.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -552,14 +471,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				224304572282ACD4001E95A7 /* TABManagerMethod.m in Sources */,
 				22CA2D032283FE4A00460357 /* ICEViewController.m in Sources */,
 				2243045E2282B15B001E95A7 /* ICEZZTViewController.m in Sources */,
-				224304542282ACD4001E95A7 /* TABAnimated.m in Sources */,
-				224304552282ACD4001E95A7 /* UIView+TABAnimated.m in Sources */,
-				224304532282ACD4001E95A7 /* TABCollectionAnimated.m in Sources */,
-				224304502282ACD4001E95A7 /* NSArray+TABAnimated.m in Sources */,
-				224304562282ACD4001E95A7 /* TABTableAnimated.m in Sources */,
+				636B215D2293D11400E4A07B /* ICEXibView.m in Sources */,
 				22CA2CFA2283FE1800460357 /* ICECodeViewController.m in Sources */,
 				6328F490228E87AB00CDE193 /* ICETools.m in Sources */,
 				6328F4A7228EB5D600CDE193 /* ICECollectionViewCell.m in Sources */,
@@ -567,26 +481,16 @@
 				224304082282AC29001E95A7 /* main.m in Sources */,
 				6328F46E228D5FDC00CDE193 /* ICETableViewCell.m in Sources */,
 				224304622282B19A001E95A7 /* ICEZXTViewController.m in Sources */,
-				224304512282ACD4001E95A7 /* TABViewAnimated.m in Sources */,
 				6328F473228E48A800CDE193 /* ICEModel.m in Sources */,
-				224304582282ACD4001E95A7 /* UITableView+TABAnimated.m in Sources */,
 				6328F48B228E5B1600CDE193 /* ICEXibTableViewCell.m in Sources */,
 				636B21552292A19800E4A07B /* ICELoadingView.m in Sources */,
-				224304522282ACD4001E95A7 /* UITableViewCell+TABLayoutSubviews.m in Sources */,
-				6328F497228E8DF000CDE193 /* ICEViewCell.m in Sources */,
+				636B215A2293A97C00E4A07B /* ICECodeCollectionViewCell.m in Sources */,
 				6328F4A3228EB5CE00CDE193 /* ICECollectionViewController.m in Sources */,
-				2243044C2282ACD4001E95A7 /* TABAnimationMethod.m in Sources */,
 				6328F493228E8DDC00CDE193 /* ICETestView.m in Sources */,
-				224304592282ACD4001E95A7 /* UIView+TABLayoutSubviews.m in Sources */,
-				2243044D2282ACD4001E95A7 /* UICollectionView+TABAnimated.m in Sources */,
 				636B2152229284D100E4A07B /* UIView+ICEZwt.m in Sources */,
-				2243044E2282ACD4001E95A7 /* UICollectionViewCell+TABLayoutSubviews.m in Sources */,
-				2243045A2282ACD4001E95A7 /* TABLayer.m in Sources */,
-				2243044F2282ACD4001E95A7 /* TABComponentLayer.m in Sources */,
 				224304652282B1A7001E95A7 /* ICEBZTViewController.m in Sources */,
 				224303FA2282AC28001E95A7 /* AppDelegate.m in Sources */,
 				22CA2CFD2283FE2800460357 /* ICEXibViewController.m in Sources */,
-				2243044B2282ACD4001E95A7 /* UIView+TABControlAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -762,6 +666,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LGN7SU938D;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZXT/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveCocoa/ReactiveCocoa.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDAutoLayout/SDAutoLayout.framework/Headers\"",
+				);
 				INFOPLIST_FILE = ZXT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -790,6 +699,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LGN7SU938D;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZXT/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveCocoa/ReactiveCocoa.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDAutoLayout/SDAutoLayout.framework/Headers\"",
+				);
 				INFOPLIST_FILE = ZXT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
