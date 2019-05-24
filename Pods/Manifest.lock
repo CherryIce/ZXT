@@ -1,4 +1,39 @@
 PODS:
+  - KafkaRefresh (1.4.0):
+    - KafkaRefresh/Category (= 1.4.0)
+    - KafkaRefresh/Configuration (= 1.4.0)
+    - KafkaRefresh/Core (= 1.4.0)
+    - KafkaRefresh/Default (= 1.4.0)
+    - KafkaRefresh/Style (= 1.4.0)
+    - KafkaRefresh/UIKit (= 1.4.0)
+  - KafkaRefresh/Category (1.4.0)
+  - KafkaRefresh/Configuration (1.4.0):
+    - KafkaRefresh/UIKit/FootKit
+    - KafkaRefresh/UIKit/HeadKit
+  - KafkaRefresh/Core (1.4.0):
+    - KafkaRefresh/Category
+  - KafkaRefresh/Default (1.4.0):
+    - KafkaRefresh/Style
+  - KafkaRefresh/Style (1.4.0)
+  - KafkaRefresh/UIKit (1.4.0):
+    - KafkaRefresh/UIKit/FootKit (= 1.4.0)
+    - KafkaRefresh/UIKit/HeadKit (= 1.4.0)
+    - KafkaRefresh/UIKit/LayerKit (= 1.4.0)
+  - KafkaRefresh/UIKit/FootKit (1.4.0):
+    - KafkaRefresh/Category
+    - KafkaRefresh/Core
+    - KafkaRefresh/Default
+    - KafkaRefresh/Style
+    - KafkaRefresh/UIKit/LayerKit
+  - KafkaRefresh/UIKit/HeadKit (1.4.0):
+    - KafkaRefresh/Category
+    - KafkaRefresh/Core
+    - KafkaRefresh/Default
+    - KafkaRefresh/Style
+    - KafkaRefresh/UIKit/LayerKit
+  - KafkaRefresh/UIKit/LayerKit (1.4.0):
+    - KafkaRefresh/Category
+    - KafkaRefresh/Default
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -10,21 +45,24 @@ PODS:
   - TABAnimated (2.0.7)
 
 DEPENDENCIES:
+  - KafkaRefresh
   - ReactiveCocoa (~> 2.5.0)
   - SDAutoLayout
   - TABAnimated
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - KafkaRefresh
     - ReactiveCocoa
     - SDAutoLayout
     - TABAnimated
 
 SPEC CHECKSUMS:
+  KafkaRefresh: 7e40fce9a5fb180da8b9382ab1b5a129f1f8d48d
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
   TABAnimated: 6b7514eef96f82c2a8baa5ae62f0f06bc171d8e3
 
-PODFILE CHECKSUM: e44a0c307f0235314ed1c4ddee4b8bdb16d5bb26
+PODFILE CHECKSUM: 4208c233a0aefdb3145fdebde6d167c93e8f52b0
 
 COCOAPODS: 1.6.1

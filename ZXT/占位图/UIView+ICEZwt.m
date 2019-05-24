@@ -90,7 +90,7 @@ static void *originalScrollEnabledKey = &originalScrollEnabledKey;
     //------- 重新加载button -------//
     UIButton *reloadButton = [[UIButton alloc] init];
     [self.cq_placeholderView addSubview:reloadButton];
-    [reloadButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [reloadButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [reloadButton setTitle:@"重新加载" forState:UIControlStateNormal];
     
     @weakify(self);
@@ -115,7 +115,7 @@ static void *originalScrollEnabledKey = &originalScrollEnabledKey;
     switch (type) {
         case NoNetwork: // 网络不好
         {
-            NSString *path = [[NSBundle mainBundle] pathForResource:@"没网" ofType:@"png"];
+            NSString *path = [[NSBundle mainBundle] pathForResource:@"没网络" ofType:@"png"];
             imageView.image = [UIImage imageWithContentsOfFile:path];
             descLabel.text = @"请检查你的网络连接";
         }
@@ -123,7 +123,7 @@ static void *originalScrollEnabledKey = &originalScrollEnabledKey;
             
         case NoDataSorce: // 没数据
         {
-            NSString *path = [[NSBundle mainBundle] pathForResource:@"没网" ofType:@"png"];
+            NSString *path = [[NSBundle mainBundle] pathForResource:@"没数据" ofType:@"png"];
             imageView.image = [UIImage imageWithContentsOfFile:path];
             descLabel.text = descr;
         }

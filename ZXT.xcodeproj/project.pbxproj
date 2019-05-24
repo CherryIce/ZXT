@@ -27,12 +27,12 @@
 		6328F490228E87AB00CDE193 /* ICETools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F48F228E87AB00CDE193 /* ICETools.m */; };
 		6328F493228E8DDC00CDE193 /* ICETestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F492228E8DDC00CDE193 /* ICETestView.m */; };
 		6328F4A3228EB5CE00CDE193 /* ICECollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F4A2228EB5CE00CDE193 /* ICECollectionViewController.m */; };
+		63571C6D2297E88F002F43D1 /* 没网络.png in Resources */ = {isa = PBXBuildFile; fileRef = 63571C6B2297E88F002F43D1 /* 没网络.png */; };
+		63571C6E2297E88F002F43D1 /* 没数据.png in Resources */ = {isa = PBXBuildFile; fileRef = 63571C6C2297E88F002F43D1 /* 没数据.png */; };
 		636B2152229284D100E4A07B /* UIView+ICEZwt.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B2151229284D100E4A07B /* UIView+ICEZwt.m */; };
-		636B21552292A19800E4A07B /* ICELoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B21542292A19800E4A07B /* ICELoadingView.m */; };
 		636B215A2293A97C00E4A07B /* ICECodeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B21592293A97C00E4A07B /* ICECodeCollectionViewCell.m */; };
 		636B215D2293D11400E4A07B /* ICEXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B215C2293D11400E4A07B /* ICEXibView.m */; };
 		636B215F2293D13B00E4A07B /* ICEXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636B215E2293D13B00E4A07B /* ICEXibView.xib */; };
-		636B21622293E9F100E4A07B /* 没网.png in Resources */ = {isa = PBXBuildFile; fileRef = 636B21612293E9F000E4A07B /* 没网.png */; };
 		636B2165229400B300E4A07B /* ICETableXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B2164229400B300E4A07B /* ICETableXibViewController.m */; };
 		ED843D73A3575E30BEB8ABFD /* Pods_ZXT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B2899D578FD9EDC9FC80E2 /* Pods_ZXT.framework */; };
 /* End PBXBuildFile section */
@@ -96,16 +96,15 @@
 		6328F492228E8DDC00CDE193 /* ICETestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICETestView.m; sourceTree = "<group>"; };
 		6328F4A1228EB5CE00CDE193 /* ICECollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICECollectionViewController.h; sourceTree = "<group>"; };
 		6328F4A2228EB5CE00CDE193 /* ICECollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICECollectionViewController.m; sourceTree = "<group>"; };
+		63571C6B2297E88F002F43D1 /* 没网络.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "没网络.png"; sourceTree = "<group>"; };
+		63571C6C2297E88F002F43D1 /* 没数据.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "没数据.png"; sourceTree = "<group>"; };
 		636B2150229284D100E4A07B /* UIView+ICEZwt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ICEZwt.h"; sourceTree = "<group>"; };
 		636B2151229284D100E4A07B /* UIView+ICEZwt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ICEZwt.m"; sourceTree = "<group>"; };
-		636B21532292A19800E4A07B /* ICELoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICELoadingView.h; sourceTree = "<group>"; };
-		636B21542292A19800E4A07B /* ICELoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICELoadingView.m; sourceTree = "<group>"; };
 		636B21582293A97C00E4A07B /* ICECodeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICECodeCollectionViewCell.h; sourceTree = "<group>"; };
 		636B21592293A97C00E4A07B /* ICECodeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICECodeCollectionViewCell.m; sourceTree = "<group>"; };
 		636B215B2293D11400E4A07B /* ICEXibView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEXibView.h; sourceTree = "<group>"; };
 		636B215C2293D11400E4A07B /* ICEXibView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEXibView.m; sourceTree = "<group>"; };
 		636B215E2293D13B00E4A07B /* ICEXibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICEXibView.xib; sourceTree = "<group>"; };
-		636B21612293E9F000E4A07B /* 没网.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "没网.png"; sourceTree = "<group>"; };
 		636B2163229400B300E4A07B /* ICETableXibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICETableXibViewController.h; sourceTree = "<group>"; };
 		636B2164229400B300E4A07B /* ICETableXibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICETableXibViewController.m; sourceTree = "<group>"; };
 		9E337BC15CE31478928B43C6 /* Pods-ZXT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXT.release.xcconfig"; path = "Target Support Files/Pods-ZXT/Pods-ZXT.release.xcconfig"; sourceTree = "<group>"; };
@@ -238,8 +237,6 @@
 				6328F48A228E5B1600CDE193 /* ICEXibTableViewCell.xib */,
 				6328F491228E8DDC00CDE193 /* ICETestView.h */,
 				6328F492228E8DDC00CDE193 /* ICETestView.m */,
-				636B21532292A19800E4A07B /* ICELoadingView.h */,
-				636B21542292A19800E4A07B /* ICELoadingView.m */,
 				636B21582293A97C00E4A07B /* ICECodeCollectionViewCell.h */,
 				636B21592293A97C00E4A07B /* ICECodeCollectionViewCell.m */,
 				636B215B2293D11400E4A07B /* ICEXibView.h */,
@@ -263,7 +260,8 @@
 		636B21602293E94100E4A07B /* 占位图 */ = {
 			isa = PBXGroup;
 			children = (
-				636B21612293E9F000E4A07B /* 没网.png */,
+				63571C6B2297E88F002F43D1 /* 没网络.png */,
+				63571C6C2297E88F002F43D1 /* 没数据.png */,
 				636B2150229284D100E4A07B /* UIView+ICEZwt.h */,
 				636B2151229284D100E4A07B /* UIView+ICEZwt.m */,
 			);
@@ -396,9 +394,10 @@
 				224304052282AC29001E95A7 /* LaunchScreen.storyboard in Resources */,
 				224304022282AC29001E95A7 /* Assets.xcassets in Resources */,
 				224304002282AC28001E95A7 /* Main.storyboard in Resources */,
+				63571C6D2297E88F002F43D1 /* 没网络.png in Resources */,
 				6328F48C228E5B1600CDE193 /* ICEXibTableViewCell.xib in Resources */,
+				63571C6E2297E88F002F43D1 /* 没数据.png in Resources */,
 				636B215F2293D13B00E4A07B /* ICEXibView.xib in Resources */,
-				636B21622293E9F100E4A07B /* 没网.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +449,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZXT/Pods-ZXT-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KafkaRefresh/KafkaRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/SDAutoLayout/SDAutoLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/TABAnimated/TABAnimated.framework",
@@ -458,6 +458,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KafkaRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDAutoLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TABAnimated.framework",
@@ -486,7 +487,6 @@
 				636B2165229400B300E4A07B /* ICETableXibViewController.m in Sources */,
 				6328F473228E48A800CDE193 /* ICEModel.m in Sources */,
 				6328F48B228E5B1600CDE193 /* ICEXibTableViewCell.m in Sources */,
-				636B21552292A19800E4A07B /* ICELoadingView.m in Sources */,
 				636B215A2293A97C00E4A07B /* ICECodeCollectionViewCell.m in Sources */,
 				6328F4A3228EB5CE00CDE193 /* ICECollectionViewController.m in Sources */,
 				6328F493228E8DDC00CDE193 /* ICETestView.m in Sources */,

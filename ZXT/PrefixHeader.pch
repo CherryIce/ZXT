@@ -20,9 +20,9 @@
 
 #import "TABAnimated.h"
 #import "SDAutoLayout.h"
+#import "KafkaRefresh.h"
 
 #import "ICETools.h"
 #import "UIView+ICEZwt.h"
-#import "ICELoadingView.h"
 
 #endif /* PrefixHeader_pch */

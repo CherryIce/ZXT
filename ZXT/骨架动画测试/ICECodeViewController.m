@@ -16,17 +16,32 @@
 
 @property (nonatomic , retain) NSMutableArray * dataArray;
 
+@property (nonatomic , assign) BOOL isFirst;
+
+@property (nonatomic, assign) BOOL isNetwork;
+
 @end
 
 static NSString * CellID = @"ICETableViewCell";
 
 @implementation ICECodeViewController
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    _isFirst = true;
+    _isNetwork = false;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self regsiterAnimated];
     [self afterGetData];
+    
+    [self.tableView bindHeadRefreshHandler:^{
+        [self afterGetData];
+    } themeColor:[UIColor blueColor] refreshStyle:KafkaRefreshStyleAnimatableArrow];
+   // [self.tableView.headRefreshControl beginRefreshing];
 }
 
 #pragma mark - Target Methods
@@ -36,33 +51,41 @@ static NSString * CellID = @"ICETableViewCell";
  */
 - (void)afterGetData {
     [self.tableView tab_startAnimation];   // 开启动画
-    [ICELoadingView showInView:self.view];
+    [self.dataArray removeAllObjects];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [ICELoadingView disMissView:self.view];
         // 停止动画,并刷新数据
+        [self.tableView.headRefreshControl endRefreshing];
         [self.tableView tab_endAnimation];
-        [self.view shoZWtWithType:NoDataSorce descr:@"没有数据哈" reloadBlock:^{
-            [self loadData];
-        }];
+        if (!self.isFirst) {
+            if (!self.isNetwork){
+                self.isNetwork = true;
+                [self.view shoZWtWithType:NoNetwork descr:@"" reloadBlock:^{
+                    [self.tableView.headRefreshControl beginRefreshing];
+                }];
+            }else{
+                [self loadData];
+            }
+        }else{
+            self.isFirst = false;
+            [self.view shoZWtWithType:NoDataSorce descr:@"没有数据哈" reloadBlock:^{
+                [self.tableView.headRefreshControl beginRefreshing];
+            }];
+        }
     });
 }
 
 - (void) loadData {
-    [ICELoadingView showInView:self.view];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [ICELoadingView disMissView:self.view];
-        // 模拟数据
-        for (int i = 0; i < 10; i ++) {
-            ICEModel * model = [[ICEModel alloc] init];
-            model.icon = @"icon";
-            model.titleName = [NSString stringWithFormat:@"%d.《肖申克的救赎》",i];
-            model.titleDescr = [NSString stringWithFormat:@"%d.我回首前尘往事，犯下重罪的小笨蛋，我想跟他沟通让他明白，但我办不到，那个少年早就不见了，只剩下我垂老之躯",i];
-            model.cellH = 70 + [ICETools getLabelHeightWithText:model.titleDescr width:kScreenWidth - 40 font:12];
-            [self.dataArray addObject:model];
-        }
-        // 停止动画,并刷新数据
-        [self.tableView reloadData];
-    });
+    // 模拟数据
+    for (int i = 0; i < 10; i ++) {
+        ICEModel * model = [[ICEModel alloc] init];
+        model.icon = @"icon";
+        model.titleName = [NSString stringWithFormat:@"%d.《肖申克的救赎》",i];
+        model.titleDescr = [NSString stringWithFormat:@"%d.我回首前尘往事，犯下重罪的小笨蛋，我想跟他沟通让他明白，但我办不到，那个少年早就不见了，只剩下我垂老之躯",i];
+        model.cellH = 70 + [ICETools getLabelHeightWithText:model.titleDescr width:kScreenWidth - 40 font:12];
+        [self.dataArray addObject:model];
+    }
+    // 停止动画,并刷新数据
+    [self.tableView reloadData];
 }
 
 #pragma mark - UITableViewDelegate & Datasource
@@ -72,8 +95,11 @@ static NSString * CellID = @"ICETableViewCell";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    ICEModel * m = self.dataArray[indexPath.row];
-    return m.cellH;
+    if (self.dataArray.count > 0) {
+        ICEModel * m = self.dataArray[indexPath.row];
+        return m.cellH;
+    }
+    return .1;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
@@ -86,8 +112,10 @@ static NSString * CellID = @"ICETableViewCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ICETableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID];
-    ICEModel * m = self.dataArray[indexPath.row];
-    cell.model = m;
+    if (self.dataArray.count > 0) {
+        ICEModel * m = self.dataArray[indexPath.row];
+        cell.model = m;
+    }
     return cell;
 }
 
