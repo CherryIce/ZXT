@@ -20,6 +20,10 @@
 		224304652282B1A7001E95A7 /* ICEBZTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304642282B1A7001E95A7 /* ICEBZTViewController.m */; };
 		22CA2CFA2283FE1800460357 /* ICECodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CA2CF92283FE1800460357 /* ICECodeViewController.m */; };
 		22CA2D032283FE4A00460357 /* ICEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CA2D022283FE4A00460357 /* ICEViewController.m */; };
+		6314DCE0229BDF9000738749 /* ICEImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6314DCDF229BDF9000738749 /* ICEImageViewController.m */; };
+		6314DCF0229CC56A00738749 /* ICEImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6314DCEE229CC56A00738749 /* ICEImageViewCell.m */; };
+		6314DCF1229CC56A00738749 /* ICEImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6314DCEF229CC56A00738749 /* ICEImageViewCell.xib */; };
+		6314DCF4229CE5CC00738749 /* ICEWatchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6314DCF3229CE5CC00738749 /* ICEWatchImageView.m */; };
 		6328F46E228D5FDC00CDE193 /* ICETableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F46D228D5FDC00CDE193 /* ICETableViewCell.m */; };
 		6328F473228E48A800CDE193 /* ICEModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F472228E48A800CDE193 /* ICEModel.m */; };
 		6328F48B228E5B1600CDE193 /* ICEXibTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F489228E5B1600CDE193 /* ICEXibTableViewCell.m */; };
@@ -34,6 +38,9 @@
 		636B215D2293D11400E4A07B /* ICEXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B215C2293D11400E4A07B /* ICEXibView.m */; };
 		636B215F2293D13B00E4A07B /* ICEXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636B215E2293D13B00E4A07B /* ICEXibView.xib */; };
 		636B2165229400B300E4A07B /* ICETableXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B2164229400B300E4A07B /* ICETableXibViewController.m */; };
+		637C7890229E2B9400558261 /* ICEImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C788F229E2B9400558261 /* ICEImageView.m */; };
+		637C7903229FF56A00558261 /* NSData+MD5Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C7902229FF56A00558261 /* NSData+MD5Digest.m */; };
+		637C791422A1152E00558261 /* UIImage+ICEImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 637C791322A1152E00558261 /* UIImage+ICEImage.m */; };
 		ED843D73A3575E30BEB8ABFD /* Pods_ZXT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B2899D578FD9EDC9FC80E2 /* Pods_ZXT.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +90,13 @@
 		22CA2CF92283FE1800460357 /* ICECodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICECodeViewController.m; sourceTree = "<group>"; };
 		22CA2D012283FE4A00460357 /* ICEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEViewController.h; sourceTree = "<group>"; };
 		22CA2D022283FE4A00460357 /* ICEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEViewController.m; sourceTree = "<group>"; };
+		6314DCDE229BDF9000738749 /* ICEImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEImageViewController.h; sourceTree = "<group>"; };
+		6314DCDF229BDF9000738749 /* ICEImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEImageViewController.m; sourceTree = "<group>"; };
+		6314DCED229CC56A00738749 /* ICEImageViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEImageViewCell.h; sourceTree = "<group>"; };
+		6314DCEE229CC56A00738749 /* ICEImageViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEImageViewCell.m; sourceTree = "<group>"; };
+		6314DCEF229CC56A00738749 /* ICEImageViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICEImageViewCell.xib; sourceTree = "<group>"; };
+		6314DCF2229CE5CC00738749 /* ICEWatchImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEWatchImageView.h; sourceTree = "<group>"; };
+		6314DCF3229CE5CC00738749 /* ICEWatchImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEWatchImageView.m; sourceTree = "<group>"; };
 		6328F46C228D5FDC00CDE193 /* ICETableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICETableViewCell.h; sourceTree = "<group>"; };
 		6328F46D228D5FDC00CDE193 /* ICETableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICETableViewCell.m; sourceTree = "<group>"; };
 		6328F471228E48A800CDE193 /* ICEModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEModel.h; sourceTree = "<group>"; };
@@ -107,6 +121,12 @@
 		636B215E2293D13B00E4A07B /* ICEXibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICEXibView.xib; sourceTree = "<group>"; };
 		636B2163229400B300E4A07B /* ICETableXibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICETableXibViewController.h; sourceTree = "<group>"; };
 		636B2164229400B300E4A07B /* ICETableXibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICETableXibViewController.m; sourceTree = "<group>"; };
+		637C788E229E2B9400558261 /* ICEImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEImageView.h; sourceTree = "<group>"; };
+		637C788F229E2B9400558261 /* ICEImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEImageView.m; sourceTree = "<group>"; };
+		637C7901229FF56A00558261 /* NSData+MD5Digest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5Digest.h"; sourceTree = "<group>"; };
+		637C7902229FF56A00558261 /* NSData+MD5Digest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5Digest.m"; sourceTree = "<group>"; };
+		637C791222A1152E00558261 /* UIImage+ICEImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ICEImage.h"; sourceTree = "<group>"; };
+		637C791322A1152E00558261 /* UIImage+ICEImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ICEImage.m"; sourceTree = "<group>"; };
 		9E337BC15CE31478928B43C6 /* Pods-ZXT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXT.release.xcconfig"; path = "Target Support Files/Pods-ZXT/Pods-ZXT.release.xcconfig"; sourceTree = "<group>"; };
 		F9B2899D578FD9EDC9FC80E2 /* Pods_ZXT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZXT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -200,12 +220,15 @@
 		2243045F2282B163001E95A7 /* 线状图 */ = {
 			isa = PBXGroup;
 			children = (
+				6314DCE1229BDFA200738749 /* image_views */,
 				2243045C2282B15B001E95A7 /* ICEZZTViewController.h */,
 				2243045D2282B15B001E95A7 /* ICEZZTViewController.m */,
 				224304602282B19A001E95A7 /* ICEZXTViewController.h */,
 				224304612282B19A001E95A7 /* ICEZXTViewController.m */,
 				224304632282B1A7001E95A7 /* ICEBZTViewController.h */,
 				224304642282B1A7001E95A7 /* ICEBZTViewController.m */,
+				6314DCDE229BDF9000738749 /* ICEImageViewController.h */,
+				6314DCDF229BDF9000738749 /* ICEImageViewController.m */,
 			);
 			path = "线状图";
 			sourceTree = "<group>";
@@ -225,6 +248,24 @@
 				636B2164229400B300E4A07B /* ICETableXibViewController.m */,
 			);
 			path = "骨架动画测试";
+			sourceTree = "<group>";
+		};
+		6314DCE1229BDFA200738749 /* image_views */ = {
+			isa = PBXGroup;
+			children = (
+				6314DCED229CC56A00738749 /* ICEImageViewCell.h */,
+				6314DCEE229CC56A00738749 /* ICEImageViewCell.m */,
+				6314DCEF229CC56A00738749 /* ICEImageViewCell.xib */,
+				6314DCF2229CE5CC00738749 /* ICEWatchImageView.h */,
+				6314DCF3229CE5CC00738749 /* ICEWatchImageView.m */,
+				637C788E229E2B9400558261 /* ICEImageView.h */,
+				637C788F229E2B9400558261 /* ICEImageView.m */,
+				637C7901229FF56A00558261 /* NSData+MD5Digest.h */,
+				637C7902229FF56A00558261 /* NSData+MD5Digest.m */,
+				637C791222A1152E00558261 /* UIImage+ICEImage.h */,
+				637C791322A1152E00558261 /* UIImage+ICEImage.m */,
+			);
+			path = image_views;
 			sourceTree = "<group>";
 		};
 		6328F46B228D5FAE00CDE193 /* views */ = {
@@ -395,6 +436,7 @@
 				224304022282AC29001E95A7 /* Assets.xcassets in Resources */,
 				224304002282AC28001E95A7 /* Main.storyboard in Resources */,
 				63571C6D2297E88F002F43D1 /* 没网络.png in Resources */,
+				6314DCF1229CC56A00738749 /* ICEImageViewCell.xib in Resources */,
 				6328F48C228E5B1600CDE193 /* ICEXibTableViewCell.xib in Resources */,
 				63571C6E2297E88F002F43D1 /* 没数据.png in Resources */,
 				636B215F2293D13B00E4A07B /* ICEXibView.xib in Resources */,
@@ -449,19 +491,25 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZXT/Pods-ZXT-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/KafkaRefresh/KafkaRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/SDAutoLayout/SDAutoLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/TABAnimated/TABAnimated.framework",
+				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KafkaRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDAutoLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TABAnimated.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -475,6 +523,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				637C7890229E2B9400558261 /* ICEImageView.m in Sources */,
+				6314DCF0229CC56A00738749 /* ICEImageViewCell.m in Sources */,
 				22CA2D032283FE4A00460357 /* ICEViewController.m in Sources */,
 				2243045E2282B15B001E95A7 /* ICEZZTViewController.m in Sources */,
 				636B215D2293D11400E4A07B /* ICEXibView.m in Sources */,
@@ -486,9 +536,13 @@
 				224304622282B19A001E95A7 /* ICEZXTViewController.m in Sources */,
 				636B2165229400B300E4A07B /* ICETableXibViewController.m in Sources */,
 				6328F473228E48A800CDE193 /* ICEModel.m in Sources */,
+				637C791422A1152E00558261 /* UIImage+ICEImage.m in Sources */,
 				6328F48B228E5B1600CDE193 /* ICEXibTableViewCell.m in Sources */,
 				636B215A2293A97C00E4A07B /* ICECodeCollectionViewCell.m in Sources */,
+				6314DCF4229CE5CC00738749 /* ICEWatchImageView.m in Sources */,
 				6328F4A3228EB5CE00CDE193 /* ICECollectionViewController.m in Sources */,
+				6314DCE0229BDF9000738749 /* ICEImageViewController.m in Sources */,
+				637C7903229FF56A00558261 /* NSData+MD5Digest.m in Sources */,
 				6328F493228E8DDC00CDE193 /* ICETestView.m in Sources */,
 				636B2152229284D100E4A07B /* UIView+ICEZwt.m in Sources */,
 				224304652282B1A7001E95A7 /* ICEBZTViewController.m in Sources */,

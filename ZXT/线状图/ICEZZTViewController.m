@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSData * data = [@"0123456789" dataUsingEncoding:NSUTF8StringEncoding];
+    NSLog(@">>>%@",[[data MD5Digest]  base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed]);
 }
 
 /*
