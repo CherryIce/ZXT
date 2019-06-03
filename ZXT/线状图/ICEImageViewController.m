@@ -11,7 +11,7 @@
 #import "ICEImageViewCell.h"
 #import "ICEWatchImageView.h"
 
-#define Margin 8
+#define Margin 0.1
 
 @interface ICEImageViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UIImagePickerControllerDelegate,UINavigationControllerDelegate,TZImagePickerControllerDelegate>
 
@@ -36,7 +36,7 @@
     if (!_collectionView) {
         UICollectionViewFlowLayout *fl = [[UICollectionViewFlowLayout alloc]init];
         fl.minimumInteritemSpacing = Margin;
-        fl.minimumInteritemSpacing = Margin;
+        fl.minimumLineSpacing = Margin;
         _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - kNavHegith) collectionViewLayout:fl];
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
@@ -59,6 +59,25 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.isUploading = false;
     self.isEditDelete = false;
+    [self.collectionView reloadData];
+    
+    [self initUI];
+}
+
+- (void) initUI {
+    UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor darkTextColor] forState:UIControlStateSelected];
+    [btn setTitle:@"删除" forState:UIControlStateNormal];
+    [btn setTitle:@"取消" forState:UIControlStateSelected];
+    btn.size = CGSizeMake(30, 30);
+    [btn addTarget:self action:@selector(edit:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+}
+
+- (void) edit:(UIButton *) sender {
+    sender.selected = !sender.selected;
+    self.isEditDelete = sender.selected;
     [self.collectionView reloadData];
 }
 
@@ -89,13 +108,16 @@
         cell.icon.image = [UIImage imageNamed:@"addimage"];
     }else{
         if (!self.isUploading && !self.isEditDelete) {
+            //非上传非删除状态
            cell.mb_v.hidden = cell.deleteBtn.hidden = true;
-        }else if (self.isUploading && !self.isEditDelete){
-            cell.mb_v.hidden = false;
-            cell.deleteBtn.hidden = true;
         }else if (!self.isUploading && self.isEditDelete){
+            //非上传删除状态
             cell.mb_v.hidden = true;
             cell.deleteBtn.hidden = false;
+        }else{
+            //上传状态
+            cell.mb_v.hidden = false;
+            cell.deleteBtn.hidden = true;
         }
         [cell updateCell:self.lastSelectPhotos[indexPath.row]];
     }
@@ -105,11 +127,6 @@
 //调节item边距
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
     return UIEdgeInsetsMake(0, Margin, 0, Margin);
-}
-
-//第一行头顶没空隙的处理
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
-    return CGSizeMake(self.view.frame.size.width, 10);
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -191,6 +208,7 @@
         for (UIImage * image in photos) {
             [weakSelf.lastSelectPhotos addObject:image];
         }
+        weakSelf.isUploading = true;
         [weakSelf.collectionView reloadData];
     }];
     [weakSelf presentViewController:imagePickerVc animated:YES completion:nil];

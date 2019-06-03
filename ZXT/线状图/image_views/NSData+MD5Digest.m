@@ -12,26 +12,23 @@
 
 @implementation NSData (MD5Digest)
 
-+(NSData *)MD5Digest:(NSData *)input {
++ (NSData *)MD5Digest:(NSData *)input {
     
     unsigned char result[CC_MD5_DIGEST_LENGTH];
     
     CC_MD5(input.bytes, (CC_LONG)input.length, result);
     
     return [[NSData alloc] initWithBytes:result length:CC_MD5_DIGEST_LENGTH];
-    
 }
 
 - (NSData *)MD5Digest {
     return [NSData MD5Digest:self];
 }
 
-+(NSString *)MD5HexDigest:(NSData *)input {
++ (NSString *)MD5HexDigest:(NSData *)input {
     
     unsigned char result[CC_MD5_DIGEST_LENGTH];
-    
-    
-    
+
     CC_MD5(input.bytes, (CC_LONG)input.length, result);
     
     NSMutableString *ret = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH*2];
