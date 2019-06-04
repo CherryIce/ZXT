@@ -130,6 +130,7 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    //上传失败的可以执行删除操作，可以执行查看操作
     //有上传状态的就不允许操作了
     if (self.isUploading) {
         return;

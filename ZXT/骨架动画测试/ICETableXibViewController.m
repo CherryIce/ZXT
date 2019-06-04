@@ -23,7 +23,64 @@ static NSString * cellID = @"ICEXibTableViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self configurationUI];
     [self afterGetData];
+}
+
+- (void) configurationUI {
+    UIButton * editBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    editBtn.size = CGSizeMake(60, 30);
+    [editBtn setTitle:@"编辑" forState:UIControlStateNormal];
+    [editBtn setTitle:@"完毕" forState:UIControlStateSelected];
+    editBtn.titleLabel.font = [UIFont systemFontOfSize:15];
+    editBtn.backgroundColor = [UIColor colorWithRed:0.8 green:0.8 blue:0.8 alpha:0.5];
+    [editBtn addTarget:self action:@selector(clickEditBtn:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:editBtn];
+}
+
+#pragma mark 点击编辑button
+- (void)clickEditBtn:(UIButton *)sender {
+    sender.selected = !sender.selected;
+    //可以多个tableview同时进入编辑状态
+    [self.tableView setEditing:sender.selected animated:YES];
+}
+
+#pragma mark 选择编辑模式，加入模式非常少用,默认是删除
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return UITableViewCellEditingStyleNone;
+}
+
+#pragma mark 排序 当移动了某一行时候会调用
+//编辑状态下。仅仅要实现这种方法，就能实现拖动排序
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath{
+    //tableView判断哪个tableview在移动,取消其他tableview的编辑状态
+    //sourceIndexPath 移动前
+    //destinationIndexPath 移动后
+    //数据需要调换
+}
+
+- (NSArray<UITableViewRowAction*>*)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (tableView == self.tableView) {
+        //__weak __typeof(self) weakSelf = self;
+        if (self.dataArray.count > 0) {
+            UITableViewRowAction *rowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+                NSLog(@"x执行了删除操作");
+                //[weakSelf postDelRoom:model.roomId];
+            }];
+            
+            UITableViewRowAction *rowAction2 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"复制" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+                NSLog(@"x执行了复制操作");
+            }];
+            rowAction.backgroundColor = [UIColor redColor];
+            rowAction2.backgroundColor = [UIColor blueColor];
+            NSArray *arr = @[rowAction,rowAction2];
+            return arr;
+        } else {
+            return [NSArray array];
+        }
+    } else {
+        return [NSArray array];
+    }
 }
 
 #pragma mark - Target Methods
