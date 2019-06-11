@@ -14,6 +14,8 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - CRBoxInputView (0.1.9):
+    - Masonry
   - KafkaRefresh (1.4.0):
     - KafkaRefresh/Category (= 1.4.0)
     - KafkaRefresh/Configuration (= 1.4.0)
@@ -49,6 +51,7 @@ PODS:
   - KafkaRefresh/UIKit/LayerKit (1.4.0):
     - KafkaRefresh/Category
     - KafkaRefresh/Default
+  - Masonry (1.1.0)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -65,6 +68,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - CRBoxInputView
   - KafkaRefresh
   - ReactiveCocoa (~> 2.5.0)
   - SDAutoLayout
@@ -75,7 +79,9 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - CRBoxInputView
     - KafkaRefresh
+    - Masonry
     - ReactiveCocoa
     - SDAutoLayout
     - SDWebImage
@@ -84,13 +90,15 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CRBoxInputView: ef114f55902b80ad00ae32b63d947afa51181b31
   KafkaRefresh: 7e40fce9a5fb180da8b9382ab1b5a129f1f8d48d
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
   SDWebImage: d4f87d7d36c8a4d9f9459dc282e0caa057fdf935
   TABAnimated: 6b7514eef96f82c2a8baa5ae62f0f06bc171d8e3
   TZImagePickerController: 7850b158d025065b162a1a963d445040b828abc9
 
-PODFILE CHECKSUM: b4d3c5f54ad0a16abd2e1924d788e85e8beae8a6
+PODFILE CHECKSUM: 0ae98cdbb94a481f959e275deb835e23bbe6b62c
 
 COCOAPODS: 1.6.1

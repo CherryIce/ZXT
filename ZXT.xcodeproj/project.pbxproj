@@ -20,6 +20,7 @@
 		224304652282B1A7001E95A7 /* ICEBZTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224304642282B1A7001E95A7 /* ICEBZTViewController.m */; };
 		22CA2CFA2283FE1800460357 /* ICECodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CA2CF92283FE1800460357 /* ICECodeViewController.m */; };
 		22CA2D032283FE4A00460357 /* ICEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CA2D022283FE4A00460357 /* ICEViewController.m */; };
+		63086D1322AF91BC00A23E54 /* ICEVfCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63086D1222AF91BC00A23E54 /* ICEVfCodeViewController.m */; };
 		6314DCE0229BDF9000738749 /* ICEImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6314DCDF229BDF9000738749 /* ICEImageViewController.m */; };
 		6314DCF0229CC56A00738749 /* ICEImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6314DCEE229CC56A00738749 /* ICEImageViewCell.m */; };
 		6314DCF1229CC56A00738749 /* ICEImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6314DCEF229CC56A00738749 /* ICEImageViewCell.xib */; };
@@ -90,6 +91,8 @@
 		22CA2CF92283FE1800460357 /* ICECodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICECodeViewController.m; sourceTree = "<group>"; };
 		22CA2D012283FE4A00460357 /* ICEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEViewController.h; sourceTree = "<group>"; };
 		22CA2D022283FE4A00460357 /* ICEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEViewController.m; sourceTree = "<group>"; };
+		63086D1122AF91BC00A23E54 /* ICEVfCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEVfCodeViewController.h; sourceTree = "<group>"; };
+		63086D1222AF91BC00A23E54 /* ICEVfCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEVfCodeViewController.m; sourceTree = "<group>"; };
 		6314DCDE229BDF9000738749 /* ICEImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEImageViewController.h; sourceTree = "<group>"; };
 		6314DCDF229BDF9000738749 /* ICEImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEImageViewController.m; sourceTree = "<group>"; };
 		6314DCED229CC56A00738749 /* ICEImageViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEImageViewCell.h; sourceTree = "<group>"; };
@@ -229,6 +232,8 @@
 				224304642282B1A7001E95A7 /* ICEBZTViewController.m */,
 				6314DCDE229BDF9000738749 /* ICEImageViewController.h */,
 				6314DCDF229BDF9000738749 /* ICEImageViewController.m */,
+				63086D1122AF91BC00A23E54 /* ICEVfCodeViewController.h */,
+				63086D1222AF91BC00A23E54 /* ICEVfCodeViewController.m */,
 			);
 			path = "线状图";
 			sourceTree = "<group>";
@@ -492,7 +497,9 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZXT/Pods-ZXT-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CRBoxInputView/CRBoxInputView.framework",
 				"${BUILT_PRODUCTS_DIR}/KafkaRefresh/KafkaRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/SDAutoLayout/SDAutoLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -504,7 +511,9 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CRBoxInputView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KafkaRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDAutoLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -533,6 +542,7 @@
 				224303FD2282AC28001E95A7 /* ViewController.m in Sources */,
 				224304082282AC29001E95A7 /* main.m in Sources */,
 				6328F46E228D5FDC00CDE193 /* ICETableViewCell.m in Sources */,
+				63086D1322AF91BC00A23E54 /* ICEVfCodeViewController.m in Sources */,
 				224304622282B19A001E95A7 /* ICEZXTViewController.m in Sources */,
 				636B2165229400B300E4A07B /* ICETableXibViewController.m in Sources */,
 				6328F473228E48A800CDE193 /* ICEModel.m in Sources */,

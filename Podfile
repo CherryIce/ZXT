@@ -11,4 +11,5 @@ target 'ZXT' do
   pod 'SDWebImage',:inhibit_warnings => true
   pod 'TZImagePickerController',:inhibit_warnings => true
   pod 'AFNetworking',:inhibit_warnings => true
+  pod 'CRBoxInputView',:inhibit_warnings => true
 end

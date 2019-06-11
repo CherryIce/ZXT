@@ -103,7 +103,8 @@
              @"xib表格骨架动画",
              @"collection表格骨架动画",
              @"view骨架动画",
-             @"图片处理"];
+             @"图片处理",
+             @"验证码"];
 }
 
 - (NSArray *)controllerClassArray {
@@ -114,7 +115,8 @@
              @"ICETableXibViewController",
              @"ICECollectionViewController",
              @"ICEViewController",
-             @"ICEImageViewController"];
+             @"ICEImageViewController",
+             @"ICEVfCodeViewController"];
 }
 
 //内存警告
