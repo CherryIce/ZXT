@@ -104,7 +104,8 @@
              @"collection表格骨架动画",
              @"view骨架动画",
              @"图片处理",
-             @"验证码"];
+             @"验证码",
+             @"无关联的二级联动"];
 }
 
 - (NSArray *)controllerClassArray {
@@ -116,7 +117,8 @@
              @"ICECollectionViewController",
              @"ICEViewController",
              @"ICEImageViewController",
-             @"ICEVfCodeViewController"];
+             @"ICEVfCodeViewController",
+             @"ICEDoubleMoveViewController"];
 }
 
 //内存警告
