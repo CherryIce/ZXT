@@ -38,17 +38,17 @@
     return instance;
 }
 
-- (void)showGuidePageWithType:(HWGuidePageType)type
+- (void)showGuidePageWithType:(HWGuidePageType)type rect:(CGRect)rect
 {
-    [self creatControlWithType:type completion:NULL];
+    [self creatControlWithType:type rect:rect completion:NULL];
 }
 
-- (void)showGuidePageWithType:(HWGuidePageType)type completion:(FinishBlock)completion
+- (void)showGuidePageWithType:(HWGuidePageType)type rect:(CGRect)rect completion:(FinishBlock)completion
 {
-    [self creatControlWithType:type completion:completion];
+    [self creatControlWithType:type rect:rect completion:completion];
 }
 
-- (void)creatControlWithType:(HWGuidePageType)type completion:(FinishBlock)completion
+- (void)creatControlWithType:(HWGuidePageType)type rect:(CGRect)rect completion:(FinishBlock)completion
 {
     _finish = completion;
 
@@ -68,7 +68,7 @@
     switch (type) {
         case HWGuidePageTypeHome:
             // 下一个路径，圆形
-            [path appendPath:[UIBezierPath bezierPathWithArcCenter:CGPointMake(bgView.centerX, bgView.centerY) radius:105 startAngle:0 endAngle:2 * M_PI clockwise:NO]];
+            [path appendPath:[UIBezierPath bezierPathWithArcCenter:CGPointMake(bgView.centerX, bgView.centerY) radius:rect.size.width/2 startAngle:0 endAngle:2 * M_PI clockwise:NO]];
             imgView.frame = KSuitRect(220, kScreenHeight/2 - 210, 100, 100);
             imgView.image = [UIImage imageNamed:@"hi"];
             _guidePageKey = HWGuidePageHomeKey;
@@ -76,8 +76,8 @@
             
         case HWGuidePageTypeMajor:
             // 下一个路径，矩形
-            [path appendPath:[[UIBezierPath bezierPathWithRoundedRect:CGRectMake(bgView.frame.size.width/2 - 105, bgView.frame.size.height/2 - 30, 210, 60) cornerRadius:5] bezierPathByReversingPath]];
-            imgView.frame = CGRectMake(bgView.frame.size.width/2 - 60, bgView.frame.size.height/2 - 140, 120, 120);
+            [path appendPath:[[UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:5] bezierPathByReversingPath]];
+            imgView.frame = CGRectMake(rect.origin.x + rect.size.width/2, rect.origin.y - 120 - 10, 120, 120);
             imgView.image = [UIImage imageNamed:@"ly"];
             _guidePageKey = HWGuidePageMajorKey;
             break;

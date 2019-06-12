@@ -25,7 +25,8 @@
         _selectBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_selectBtn setFrame:CGRectMake(0, 0, 200, 50)];
         _selectBtn.center = self.view.center;
-        [_selectBtn setBackgroundColor:[UIColor lightGrayColor]];
+        [_selectBtn setTitle:@"测试下" forState:UIControlStateNormal];
+        [_selectBtn setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
         [_selectBtn addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
         _selectBtn.cs_acceptEventInterval = 1;
     }
@@ -44,11 +45,14 @@
 
 - (void)showGuidePage
 {
+    UIWindow * window=[[[UIApplication sharedApplication] delegate] window];
+    
+    CGRect startRact = [self.selectBtn convertRect:self.selectBtn.bounds toView:window];
     // 判断是否已显示过
     //    if (![[NSUserDefaults standardUserDefaults] boolForKey:HWGuidePageHomeKey]) {
     // 显示
-    [[HWGuidePageManager shareManager] showGuidePageWithType:HWGuidePageTypeHome completion:^{
-        [[HWGuidePageManager shareManager] showGuidePageWithType:HWGuidePageTypeMajor];
+    [[HWGuidePageManager shareManager] showGuidePageWithType:HWGuidePageTypeHome rect:startRact completion:^{
+        [[HWGuidePageManager shareManager] showGuidePageWithType:HWGuidePageTypeMajor rect:startRact];
     }];
     //    }
 }

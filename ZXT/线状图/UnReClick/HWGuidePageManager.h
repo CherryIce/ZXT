@@ -28,8 +28,9 @@ typedef NS_ENUM(NSInteger, HWGuidePageType) {
  显示方法
 
  @param type 指引页类型
+ @param rect 指引控件位置
  */
-- (void)showGuidePageWithType:(HWGuidePageType)type;
+- (void)showGuidePageWithType:(HWGuidePageType)type rect:(CGRect)rect;
 
 /**
  显示方法
@@ -37,6 +38,6 @@ typedef NS_ENUM(NSInteger, HWGuidePageType) {
  @param type 指引页类型
  @param completion 完成时回调
  */
-- (void)showGuidePageWithType:(HWGuidePageType)type completion:(FinishBlock)completion;
+- (void)showGuidePageWithType:(HWGuidePageType)type rect:(CGRect)rect completion:(FinishBlock)completion;
 
 @end
