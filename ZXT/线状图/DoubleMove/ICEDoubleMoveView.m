@@ -28,6 +28,10 @@
 
 @property (nonatomic, retain) UIButton * cancelBtn;
 
+@property (nonatomic, retain) UIView * lineView;
+
+@property (nonatomic, retain) UILabel * titleLab;
+
 @end
 
 @implementation ICEDoubleMoveView
@@ -35,9 +39,10 @@
 - (UIButton *)sureBtn{
     if (!_sureBtn) {
         _sureBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_sureBtn setFrame:CGRectMake(kScreenWidth - 70, 0, 70, 40)];
+        [_sureBtn setFrame:CGRectMake(kScreenWidth - 70, 0, 70, 39.5)];
         [_sureBtn setTitle:@"确定" forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+        _sureBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:16];
         [_sureBtn addTarget:self action:@selector(confirmClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return _sureBtn;
@@ -46,12 +51,31 @@
 - (UIButton *)cancelBtn{
     if (!_cancelBtn) {
         _cancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_cancelBtn setFrame:CGRectMake(0, 0, 70, 40)];
+        [_cancelBtn setFrame:CGRectMake(0, 0, 70, 39.5)];
         [_cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
-        [_cancelBtn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+        [_cancelBtn setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
+        _cancelBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:16];
         [_cancelBtn addTarget:self action:@selector(cancelClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return _cancelBtn;
+}
+
+- (UILabel *)titleLab{
+    if (!_titleLab) {
+        _titleLab = [[UILabel alloc] initWithFrame:CGRectMake(70, 0, self.bgView.frame.size.width - 2*70, 39.5)];
+        _titleLab.font = [UIFont fontWithName:@"PingFangSC-Regular" size:16];
+        _titleLab.textColor = [UIColor darkTextColor];
+        _titleLab.textAlignment = NSTextAlignmentCenter;
+    }
+    return _titleLab;
+}
+
+- (UIView *)lineView{
+    if (!_lineView) {
+        _lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 39.5, self.bgView.frame.size.width, 0.5)];
+        _lineView.backgroundColor = [UIColor colorWithRed:235/255.00 green:235/255.00 blue:235/255.00 alpha:1];
+    }
+    return _lineView;
 }
 
 - (PGPickerView *)picker{
@@ -63,11 +87,10 @@
         _picker.type = PGPickerViewLineTypeline;
         _picker.isHiddenMiddleText = false;
         _picker.rowHeight = 50;
-        _picker.lineBackgroundColor = [UIColor colorWithRed:235/255.00 green:235/255.00 blue:235/255.00 alpha:1];
         //设置线条的颜色
-        _picker.lineBackgroundColor = [UIColor redColor];
+        _picker.lineBackgroundColor = [UIColor colorWithRed:235/255.00 green:235/255.00 blue:235/255.00 alpha:1];
         //设置选中行的字体颜色
-        _picker.textColorOfSelectedRow = [UIColor blueColor];
+        _picker.textColorOfSelectedRow = [UIColor orangeColor];
         //设置未选中行的字体颜色
         _picker.textColorOfOtherRow = [UIColor blackColor];
         [self.bgView addSubview:_picker];
@@ -88,7 +111,10 @@
     if (self) {
         [self addSubview:self.bgView];
         [self.bgView addSubview:self.sureBtn];
-         [self.bgView addSubview:self.cancelBtn];
+        [self.bgView addSubview:self.cancelBtn];
+        [self.bgView addSubview:self.titleLab];
+        [self.bgView addSubview:self.lineView];
+        
         _leftData = leftDataArr;
         _rightData = rightDataArr;
         _leftIndex = leftRow;
@@ -97,6 +123,11 @@
         [self.picker selectRow:rightRow inComponent:1 animated:true];
     }
     return self;
+}
+
+- (void)setTitleStr:(NSString *)titleStr{
+    _titleStr = titleStr;
+    self.titleLab.text = titleStr;
 }
 
 #pragma UIPickerViewDataSource

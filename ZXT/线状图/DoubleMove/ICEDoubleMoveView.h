@@ -12,15 +12,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ICEDoubleMoveView : UIView
 
+@property (nonatomic , copy) NSString * titleStr;
+
+@property (nonatomic , copy) void (^confirmBtnCall)(NSInteger number,NSInteger row);
+
+@property (nonatomic , copy) void (^cancelBtnCall)(void);
+
 - (instancetype)initWithFrame:(CGRect)frame leftDataArr:(NSArray *)leftDataArr rightDataArr:(NSArray *)rightDataArr didSelectLeftRow:(NSInteger)leftRow rightRow:(NSInteger)rightRow;
 
 - (void)show;
 
 - (void)dismiss;
-
-@property (nonatomic , copy) void (^confirmBtnCall)(NSInteger number,NSInteger row);
-
-@property (nonatomic , copy) void (^cancelBtnCall)(void);
 
 @end
 

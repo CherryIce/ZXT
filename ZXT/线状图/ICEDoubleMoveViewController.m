@@ -14,6 +14,10 @@
 
 @property (nonatomic, retain) UIButton * selectBtn;
 
+@property (nonatomic, copy) NSString * numberStr;
+
+@property (nonatomic, copy) NSString * dateStr;
+
 @end
 
 @implementation ICEDoubleMoveViewController
@@ -32,12 +36,26 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.view addSubview:self.selectBtn];
+    
+    _numberStr = @"2";
+    _dateStr = @"1";
 }
 
 
 - (void) buttonClick:(UIButton *) sender{
-    ICEDoubleMoveView * v = [[ICEDoubleMoveView alloc] initWithFrame:CGRectZero leftDataArr:@[@"1",@"2",@"3",@"4",@"5"] rightDataArr:@[@"月",@"年"] didSelectLeftRow:2 rightRow:1];
+    
+    NSArray * numberArr = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12"];
+    NSArray * dateArr = @[@"月",@"年"];
+    ICEDoubleMoveView * v = [[ICEDoubleMoveView alloc] initWithFrame:CGRectZero leftDataArr:numberArr rightDataArr:dateArr didSelectLeftRow:[_numberStr integerValue] rightRow:[_dateStr integerValue]];
     [v show];
+    v.titleStr = @"选择租期";
+    
+    __weak typeof(self) weakSelf = self;
+    v.confirmBtnCall = ^(NSInteger number, NSInteger row) {
+        weakSelf.numberStr = [NSString stringWithFormat:@"%zd",number];
+        weakSelf.dateStr = [NSString stringWithFormat:@"%zd",row];
+        [weakSelf.selectBtn setTitle:[NSString stringWithFormat:@"%@%@",numberArr[number],dateArr[row]] forState:UIControlStateNormal];
+    };
 }
 
 @end
