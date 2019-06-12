@@ -105,7 +105,8 @@
              @"view骨架动画",
              @"图片处理",
              @"验证码",
-             @"无关联的二级联动"];
+             @"无关联的二级联动",
+             @"按钮的防重点击"];
 }
 
 - (NSArray *)controllerClassArray {
@@ -118,7 +119,8 @@
              @"ICEViewController",
              @"ICEImageViewController",
              @"ICEVfCodeViewController",
-             @"ICEDoubleMoveViewController"];
+             @"ICEDoubleMoveViewController",
+             @"ICEUnReClickViewController"];
 }
 
 //内存警告

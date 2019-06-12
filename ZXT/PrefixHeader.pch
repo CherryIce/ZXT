@@ -29,5 +29,6 @@
 #import "ICETools.h"
 #import "UIView+ICEZwt.h"
 #import "NSData+MD5Digest.h"
+#import "GlobalConst.h"
 
 #endif /* PrefixHeader_pch */

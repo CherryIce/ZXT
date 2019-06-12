@@ -27,6 +27,12 @@
 		63086D2C22B09B4500A23E54 /* PGPickerColumnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63086D2422B09B4500A23E54 /* PGPickerColumnView.m */; };
 		63086D2D22B09B4500A23E54 /* PGPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63086D2922B09B4500A23E54 /* PGPickerView.m */; };
 		63086D2E22B09B4500A23E54 /* PGPickerTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63086D2A22B09B4500A23E54 /* PGPickerTableView.m */; };
+		63086D3122B0F75500A23E54 /* ICEUnReClickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63086D3022B0F75500A23E54 /* ICEUnReClickViewController.m */; };
+		63086D3522B0F89C00A23E54 /* UIControl+ICEUnReClick.m in Sources */ = {isa = PBXBuildFile; fileRef = 63086D3422B0F89C00A23E54 /* UIControl+ICEUnReClick.m */; };
+		63086D3A22B0F95200A23E54 /* GlobalConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 63086D3822B0F95200A23E54 /* GlobalConst.m */; };
+		63086D3B22B0F95200A23E54 /* HWGuidePageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63086D3922B0F95200A23E54 /* HWGuidePageManager.m */; };
+		63086D3E22B0F99300A23E54 /* ly.png in Resources */ = {isa = PBXBuildFile; fileRef = 63086D3C22B0F99200A23E54 /* ly.png */; };
+		63086D3F22B0F99300A23E54 /* hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 63086D3D22B0F99200A23E54 /* hi.png */; };
 		6314DCE0229BDF9000738749 /* ICEImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6314DCDF229BDF9000738749 /* ICEImageViewController.m */; };
 		6314DCF0229CC56A00738749 /* ICEImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6314DCEE229CC56A00738749 /* ICEImageViewCell.m */; };
 		6314DCF1229CC56A00738749 /* ICEImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6314DCEF229CC56A00738749 /* ICEImageViewCell.xib */; };
@@ -111,6 +117,16 @@
 		63086D2822B09B4500A23E54 /* PGPickerColumnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPickerColumnView.h; sourceTree = "<group>"; };
 		63086D2922B09B4500A23E54 /* PGPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPickerView.m; sourceTree = "<group>"; };
 		63086D2A22B09B4500A23E54 /* PGPickerTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPickerTableView.m; sourceTree = "<group>"; };
+		63086D2F22B0F75500A23E54 /* ICEUnReClickViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEUnReClickViewController.h; sourceTree = "<group>"; };
+		63086D3022B0F75500A23E54 /* ICEUnReClickViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEUnReClickViewController.m; sourceTree = "<group>"; };
+		63086D3322B0F89C00A23E54 /* UIControl+ICEUnReClick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+ICEUnReClick.h"; sourceTree = "<group>"; };
+		63086D3422B0F89C00A23E54 /* UIControl+ICEUnReClick.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ICEUnReClick.m"; sourceTree = "<group>"; };
+		63086D3622B0F95200A23E54 /* GlobalConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalConst.h; sourceTree = "<group>"; };
+		63086D3722B0F95200A23E54 /* HWGuidePageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWGuidePageManager.h; sourceTree = "<group>"; };
+		63086D3822B0F95200A23E54 /* GlobalConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalConst.m; sourceTree = "<group>"; };
+		63086D3922B0F95200A23E54 /* HWGuidePageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWGuidePageManager.m; sourceTree = "<group>"; };
+		63086D3C22B0F99200A23E54 /* ly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ly.png; sourceTree = "<group>"; };
+		63086D3D22B0F99200A23E54 /* hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hi.png; sourceTree = "<group>"; };
 		6314DCDE229BDF9000738749 /* ICEImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEImageViewController.h; sourceTree = "<group>"; };
 		6314DCDF229BDF9000738749 /* ICEImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEImageViewController.m; sourceTree = "<group>"; };
 		6314DCED229CC56A00738749 /* ICEImageViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEImageViewCell.h; sourceTree = "<group>"; };
@@ -241,6 +257,7 @@
 		2243045F2282B163001E95A7 /* 线状图 */ = {
 			isa = PBXGroup;
 			children = (
+				63086D3222B0F7F200A23E54 /* UnReClick */,
 				63086D1E22AFA75700A23E54 /* DoubleMove */,
 				6314DCE1229BDFA200738749 /* image_views */,
 				2243045C2282B15B001E95A7 /* ICEZZTViewController.h */,
@@ -255,6 +272,8 @@
 				63086D1222AF91BC00A23E54 /* ICEVfCodeViewController.m */,
 				63086D1B22AFA57E00A23E54 /* ICEDoubleMoveViewController.h */,
 				63086D1C22AFA57E00A23E54 /* ICEDoubleMoveViewController.m */,
+				63086D2F22B0F75500A23E54 /* ICEUnReClickViewController.h */,
+				63086D3022B0F75500A23E54 /* ICEUnReClickViewController.m */,
 			);
 			path = "线状图";
 			sourceTree = "<group>";
@@ -299,6 +318,21 @@
 				63086D2A22B09B4500A23E54 /* PGPickerTableView.m */,
 			);
 			path = PGPickerView;
+			sourceTree = "<group>";
+		};
+		63086D3222B0F7F200A23E54 /* UnReClick */ = {
+			isa = PBXGroup;
+			children = (
+				63086D3D22B0F99200A23E54 /* hi.png */,
+				63086D3C22B0F99200A23E54 /* ly.png */,
+				63086D3622B0F95200A23E54 /* GlobalConst.h */,
+				63086D3822B0F95200A23E54 /* GlobalConst.m */,
+				63086D3722B0F95200A23E54 /* HWGuidePageManager.h */,
+				63086D3922B0F95200A23E54 /* HWGuidePageManager.m */,
+				63086D3322B0F89C00A23E54 /* UIControl+ICEUnReClick.h */,
+				63086D3422B0F89C00A23E54 /* UIControl+ICEUnReClick.m */,
+			);
+			path = UnReClick;
 			sourceTree = "<group>";
 		};
 		6314DCE1229BDFA200738749 /* image_views */ = {
@@ -483,12 +517,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63086D3F22B0F99300A23E54 /* hi.png in Resources */,
 				224304052282AC29001E95A7 /* LaunchScreen.storyboard in Resources */,
 				224304022282AC29001E95A7 /* Assets.xcassets in Resources */,
 				224304002282AC28001E95A7 /* Main.storyboard in Resources */,
 				63571C6D2297E88F002F43D1 /* 没网络.png in Resources */,
 				6314DCF1229CC56A00738749 /* ICEImageViewCell.xib in Resources */,
 				6328F48C228E5B1600CDE193 /* ICEXibTableViewCell.xib in Resources */,
+				63086D3E22B0F99300A23E54 /* ly.png in Resources */,
 				63571C6E2297E88F002F43D1 /* 没数据.png in Resources */,
 				636B215F2293D13B00E4A07B /* ICEXibView.xib in Resources */,
 			);
@@ -578,6 +614,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63086D3A22B0F95200A23E54 /* GlobalConst.m in Sources */,
 				637C7890229E2B9400558261 /* ICEImageView.m in Sources */,
 				6314DCF0229CC56A00738749 /* ICEImageViewCell.m in Sources */,
 				22CA2D032283FE4A00460357 /* ICEViewController.m in Sources */,
@@ -585,11 +622,13 @@
 				636B215D2293D11400E4A07B /* ICEXibView.m in Sources */,
 				63086D2E22B09B4500A23E54 /* PGPickerTableView.m in Sources */,
 				22CA2CFA2283FE1800460357 /* ICECodeViewController.m in Sources */,
+				63086D3122B0F75500A23E54 /* ICEUnReClickViewController.m in Sources */,
 				6328F490228E87AB00CDE193 /* ICETools.m in Sources */,
 				224303FD2282AC28001E95A7 /* ViewController.m in Sources */,
 				224304082282AC29001E95A7 /* main.m in Sources */,
 				63086D2D22B09B4500A23E54 /* PGPickerView.m in Sources */,
 				6328F46E228D5FDC00CDE193 /* ICETableViewCell.m in Sources */,
+				63086D3B22B0F95200A23E54 /* HWGuidePageManager.m in Sources */,
 				63086D2B22B09B4500A23E54 /* PGPickerColumnCell.m in Sources */,
 				63086D1322AF91BC00A23E54 /* ICEVfCodeViewController.m in Sources */,
 				224304622282B19A001E95A7 /* ICEZXTViewController.m in Sources */,
@@ -603,6 +642,7 @@
 				63086D2122AFA77200A23E54 /* ICEDoubleMoveView.m in Sources */,
 				6314DCE0229BDF9000738749 /* ICEImageViewController.m in Sources */,
 				63086D2C22B09B4500A23E54 /* PGPickerColumnView.m in Sources */,
+				63086D3522B0F89C00A23E54 /* UIControl+ICEUnReClick.m in Sources */,
 				637C7903229FF56A00558261 /* NSData+MD5Digest.m in Sources */,
 				6328F493228E8DDC00CDE193 /* ICETestView.m in Sources */,
 				636B2152229284D100E4A07B /* UIView+ICEZwt.m in Sources */,
