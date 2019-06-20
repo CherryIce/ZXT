@@ -71,8 +71,8 @@
     self.textColorOfOtherRow = [UIColor lightGrayColor];
     self.isHiddenMiddleText = true;
     self.isHiddenWheels = true;
-    self.lineHeight = 0.8;
-    self.verticalLineWidth = 0.8;
+    self.lineHeight = 0.5;
+    self.verticalLineWidth = 0.5;
     self.verticalLineBackgroundColor = self.lineBackgroundColor;
 }
 

@@ -106,7 +106,9 @@
              @"图片处理",
              @"验证码",
              @"无关联的二级联动",
-             @"按钮的防重点击"];
+             @"按钮的防重点击",
+             @"collection+pagecontrol",
+             @"ICEPCViewController"];
 }
 
 - (NSArray *)controllerClassArray {
@@ -120,7 +122,9 @@
              @"ICEImageViewController",
              @"ICEVfCodeViewController",
              @"ICEDoubleMoveViewController",
-             @"ICEUnReClickViewController"];
+             @"ICEUnReClickViewController",
+             @"ICEPageControlViewController",
+             @"ICEPCViewController"];
 }
 
 //内存警告

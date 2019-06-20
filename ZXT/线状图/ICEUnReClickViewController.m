@@ -55,6 +55,15 @@
         [[HWGuidePageManager shareManager] showGuidePageWithType:HWGuidePageTypeMajor rect:startRact];
     }];
     //    }
+    
+    /**
+     无限层操作
+     [[HWGuidePageManager shareManager] showGuidePageWithType:HWGuidePageTypeHome rect:startRact completion:^{
+     [[HWGuidePageManager shareManager] showGuidePageWithType:HWGuidePageTypeMajor rect:startRact completion:^{
+     //code...
+     }];
+     }];
+     **/
 }
 
 /*

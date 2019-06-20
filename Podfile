@@ -12,4 +12,5 @@ target 'ZXT' do
   pod 'TZImagePickerController',:inhibit_warnings => true
   pod 'AFNetworking',:inhibit_warnings => true
   pod 'CRBoxInputView',:inhibit_warnings => true
+   pod 'PGDatePicker',:inhibit_warnings => true
 end
