@@ -8,6 +8,8 @@
 
 #import "ICETableXibViewController.h"
 
+#import "ICEModel.h"
+
 @interface ICETableXibViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic , retain) UITableView *tableView;
@@ -57,6 +59,12 @@ static NSString * cellID = @"ICEXibTableViewCell";
     //sourceIndexPath 移动前
     //destinationIndexPath 移动后
     //数据需要调换
+    // 取出要拖动的模型数据
+    ICEModel * model  = self.dataArray[sourceIndexPath.row];
+    //删除之前行的数据
+    [self.dataArray removeObject:model];
+    // 插入数据到新的位置
+    [self.dataArray insertObject:model atIndex:destinationIndexPath.row];
 }
 
 - (NSArray<UITableViewRowAction*>*)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -92,7 +100,10 @@ static NSString * cellID = @"ICEXibTableViewCell";
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         // 模拟数据
         for (int i = 0; i < 10; i ++) {
-            [self.dataArray addObject:@(i)];
+            ICEModel * model = [[ICEModel alloc] init];
+            model.titleName = [NSString stringWithFormat:@"活着-%d",i];
+            model.titleDescr = [NSString stringWithFormat:@"%d-没有什么比时间更具有说服力了，因为时间无需通知我们就可以改变一切",i];
+            [self.dataArray addObject:model];
         }
         // 停止动画,并刷新数据
         [self.tableView tab_endAnimation];
@@ -119,6 +130,9 @@ static NSString * cellID = @"ICEXibTableViewCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ICEXibTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
+    ICEModel * model = self.dataArray[indexPath.row];
+    cell.titleName.text = model.titleName;
+    cell.descrLab.text = model.titleDescr;
     return cell;
 }
 

@@ -68,6 +68,10 @@
             </tableViewCellContentView>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="descrLab" destination="cjl-wS-p3j" id="iTO-PD-1bs"/>
+                <outlet property="titleName" destination="Vrg-fb-24v" id="Bor-i1-EO6"/>
+            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
         </tableViewCell>
     </objects>

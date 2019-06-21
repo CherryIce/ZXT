@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ICEXibTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *titleName;
+
+@property (weak, nonatomic) IBOutlet UILabel *descrLab;
+
 @end
 
 NS_ASSUME_NONNULL_END

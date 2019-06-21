@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property BOOL isPagingEnabled;
 
--(void)setPagingEnabled:(BOOL)isPagingEnabled;
+- (void)setPagingEnabled:(BOOL)isPagingEnabled;
 
 @end
 

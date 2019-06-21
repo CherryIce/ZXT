@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) NSInteger currentPage;
 
+@property (nonatomic, assign) NSInteger pageNumbers;
+
 - (instancetype)initWithFrame:(CGRect)frame pageNumbers:(NSInteger)pageNumbers;
 
 @end

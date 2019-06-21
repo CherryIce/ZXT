@@ -28,8 +28,8 @@
 #pragma mark - INITIAL
 - (instancetype)initWithFrame:(CGRect)frame pageNumbers:(NSInteger)pageNumbers {
     if(self = [super initWithFrame:frame]) {
-        self.myPageNumbers = pageNumbers;
-        [self createIndicator];
+//        self.myPageNumbers = pageNumbers;
+//        [self createIndicator];
     }
     return self;
 }
@@ -42,6 +42,11 @@
     }
     [self updateFrameWithIndex:currentPage];
     
+}
+
+- (void)setPageNumbers:(NSInteger)pageNumbers{
+    self.myPageNumbers = pageNumbers;
+    [self createIndicator];
 }
 
 - (void)createIndicator {

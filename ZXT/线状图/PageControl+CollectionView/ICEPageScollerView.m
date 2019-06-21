@@ -118,25 +118,20 @@ static NSString * cellID3 = @"ICETestCollectionViewCell";
 }
 
 #pragma mark cell的大小
--(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     return CGSizeMake(Item_Width, self.frame.size.height - 30);
 }
 
 #pragma mark cell的点击事件
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"点击%ld",indexPath.row);
-    
+    NSLog(@"点击%ld",(long)indexPath.row);
 }
 
 #pragma 停止滑动监听
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
     NSIndexPath *indexPath = [self.collectionView indexPathForItemAtPoint:CGPointMake(scrollView.contentOffset.x+Item_Width, 0.5*scrollView.bounds.size.height)];
-    
-    for (UIView * v in self.collectionView.subviews) {
-        v.layer.cornerRadius = 5;
-    }
     
     if (!indexPath || self.currentIndexPath == indexPath) {
         return;
