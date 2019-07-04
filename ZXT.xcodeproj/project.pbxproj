@@ -55,6 +55,8 @@
 		6328F493228E8DDC00CDE193 /* ICETestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F492228E8DDC00CDE193 /* ICETestView.m */; };
 		6328F4A3228EB5CE00CDE193 /* ICECollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6328F4A2228EB5CE00CDE193 /* ICECollectionViewController.m */; };
 		632A45E322CD8F8C000F3E39 /* ICECollectionMoveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632A45E222CD8F8C000F3E39 /* ICECollectionMoveController.m */; };
+		632A45E622CDA99D000F3E39 /* ICETableViewMoveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632A45E522CDA99D000F3E39 /* ICETableViewMoveController.m */; };
+		632A45EA22CDAA5F000F3E39 /* ZFReOrderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 632A45E822CDAA5F000F3E39 /* ZFReOrderTableView.m */; };
 		63571C6D2297E88F002F43D1 /* 没网络.png in Resources */ = {isa = PBXBuildFile; fileRef = 63571C6B2297E88F002F43D1 /* 没网络.png */; };
 		63571C6E2297E88F002F43D1 /* 没数据.png in Resources */ = {isa = PBXBuildFile; fileRef = 63571C6C2297E88F002F43D1 /* 没数据.png */; };
 		636B2152229284D100E4A07B /* UIView+ICEZwt.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B2151229284D100E4A07B /* UIView+ICEZwt.m */; };
@@ -187,6 +189,10 @@
 		6328F4A2228EB5CE00CDE193 /* ICECollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICECollectionViewController.m; sourceTree = "<group>"; };
 		632A45E122CD8F8C000F3E39 /* ICECollectionMoveController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICECollectionMoveController.h; sourceTree = "<group>"; };
 		632A45E222CD8F8C000F3E39 /* ICECollectionMoveController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICECollectionMoveController.m; sourceTree = "<group>"; };
+		632A45E422CDA99D000F3E39 /* ICETableViewMoveController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICETableViewMoveController.h; sourceTree = "<group>"; };
+		632A45E522CDA99D000F3E39 /* ICETableViewMoveController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICETableViewMoveController.m; sourceTree = "<group>"; };
+		632A45E822CDAA5F000F3E39 /* ZFReOrderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFReOrderTableView.m; sourceTree = "<group>"; };
+		632A45E922CDAA5F000F3E39 /* ZFReOrderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFReOrderTableView.h; sourceTree = "<group>"; };
 		63571C6B2297E88F002F43D1 /* 没网络.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "没网络.png"; sourceTree = "<group>"; };
 		63571C6C2297E88F002F43D1 /* 没数据.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "没数据.png"; sourceTree = "<group>"; };
 		636B2150229284D100E4A07B /* UIView+ICEZwt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ICEZwt.h"; sourceTree = "<group>"; };
@@ -315,6 +321,7 @@
 		2243045F2282B163001E95A7 /* 线状图 */ = {
 			isa = PBXGroup;
 			children = (
+				632A45E722CDAA5F000F3E39 /* ZFReOrderTableView */,
 				631505F822B8E601006ED4A5 /* DWFlowLayout */,
 				631505DD22B8D21D006ED4A5 /* YXCalendar */,
 				63D4ED4522B73293001D2947 /* PageControl+CollectionView */,
@@ -343,6 +350,8 @@
 				631505F322B8E5B2006ED4A5 /* ICEPCViewController.m */,
 				632A45E122CD8F8C000F3E39 /* ICECollectionMoveController.h */,
 				632A45E222CD8F8C000F3E39 /* ICECollectionMoveController.m */,
+				632A45E422CDA99D000F3E39 /* ICETableViewMoveController.h */,
+				632A45E522CDA99D000F3E39 /* ICETableViewMoveController.m */,
 			);
 			path = "线状图";
 			sourceTree = "<group>";
@@ -472,6 +481,15 @@
 				6328F48F228E87AB00CDE193 /* ICETools.m */,
 			);
 			path = object;
+			sourceTree = "<group>";
+		};
+		632A45E722CDAA5F000F3E39 /* ZFReOrderTableView */ = {
+			isa = PBXGroup;
+			children = (
+				632A45E922CDAA5F000F3E39 /* ZFReOrderTableView.h */,
+				632A45E822CDAA5F000F3E39 /* ZFReOrderTableView.m */,
+			);
+			path = ZFReOrderTableView;
 			sourceTree = "<group>";
 		};
 		636B21602293E94100E4A07B /* 占位图 */ = {
@@ -771,6 +789,7 @@
 				631505FB22B8E63F006ED4A5 /* ICEFlowLayout.m in Sources */,
 				63D4ED4222B731F1001D2947 /* CWFlowLayout.m in Sources */,
 				6328F46E228D5FDC00CDE193 /* ICETableViewCell.m in Sources */,
+				632A45EA22CDAA5F000F3E39 /* ZFReOrderTableView.m in Sources */,
 				63086D3B22B0F95200A23E54 /* HWGuidePageManager.m in Sources */,
 				631505EB22B8D21D006ED4A5 /* YXDateHelpObject.m in Sources */,
 				63086D1322AF91BC00A23E54 /* ICEVfCodeViewController.m in Sources */,
@@ -796,6 +815,7 @@
 				6315064022BA4227006ED4A5 /* ICETestCollectionViewCell.m in Sources */,
 				636B2152229284D100E4A07B /* UIView+ICEZwt.m in Sources */,
 				224304652282B1A7001E95A7 /* ICEBZTViewController.m in Sources */,
+				632A45E622CDA99D000F3E39 /* ICETableViewMoveController.m in Sources */,
 				63086D1D22AFA57E00A23E54 /* ICEDoubleMoveViewController.m in Sources */,
 				63D4ED5B22B87552001D2947 /* WBPopOverView.m in Sources */,
 				631505E922B8D21D006ED4A5 /* YXCalendarView.m in Sources */,

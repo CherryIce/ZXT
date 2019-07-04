@@ -109,7 +109,8 @@
              @"按钮的防重点击",
              @"collection+pagecontrol",
              @"ICEPCViewController",
-             @"collectionView交换cell"];
+             @"collectionView交换cell",
+             @"tableView交换cell"];
 }
 
 - (NSArray *)controllerClassArray {
@@ -126,7 +127,8 @@
              @"ICEUnReClickViewController",
              @"ICEPageControlViewController",
              @"ICEPCViewController",
-             @"ICECollectionMoveController"];
+             @"ICECollectionMoveController",
+             @"ICETableViewMoveController"];
 }
 
 //内存警告
