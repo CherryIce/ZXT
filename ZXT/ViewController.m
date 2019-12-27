@@ -110,7 +110,8 @@
              @"collection+pagecontrol",
              @"ICEPCViewController",
              @"collectionView交换cell",
-             @"tableView交换cell"];
+             @"tableView交换cell",
+             @"扫码"];
 }
 
 - (NSArray *)controllerClassArray {
@@ -128,7 +129,8 @@
              @"ICEPageControlViewController",
              @"ICEPCViewController",
              @"ICECollectionMoveController",
-             @"ICETableViewMoveController"];
+             @"ICETableViewMoveController",
+             @"ICEScanCodeViewController"];
 }
 
 //内存警告

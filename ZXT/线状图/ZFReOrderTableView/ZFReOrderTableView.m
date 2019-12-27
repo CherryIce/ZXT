@@ -82,8 +82,6 @@
         _longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressGestureRecognized:)];
         [self.tableView addGestureRecognizer:_longPress];
     }
-    
-    
 }
 
 - (void)longPressGestureRecognized:(id)sender {

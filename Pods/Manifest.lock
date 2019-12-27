@@ -51,6 +51,11 @@ PODS:
   - KafkaRefresh/UIKit/LayerKit (1.4.0):
     - KafkaRefresh/Category
     - KafkaRefresh/Default
+  - LBXScan/LBXZXing (2.3):
+    - LBXScan/Types (~> 2.2)
+  - LBXScan/Types (2.3)
+  - LBXScan/UI (2.3):
+    - LBXScan/Types (~> 2.2)
   - Masonry (1.1.0)
   - PGDatePicker (2.6.9):
     - PGPickerView
@@ -73,6 +78,8 @@ DEPENDENCIES:
   - AFNetworking
   - CRBoxInputView
   - KafkaRefresh
+  - LBXScan/LBXZXing
+  - LBXScan/UI
   - PGDatePicker
   - ReactiveCocoa (~> 2.5.0)
   - SDAutoLayout
@@ -85,6 +92,7 @@ SPEC REPOS:
     - AFNetworking
     - CRBoxInputView
     - KafkaRefresh
+    - LBXScan
     - Masonry
     - PGDatePicker
     - PGPickerView
@@ -98,6 +106,7 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   CRBoxInputView: ef114f55902b80ad00ae32b63d947afa51181b31
   KafkaRefresh: 7e40fce9a5fb180da8b9382ab1b5a129f1f8d48d
+  LBXScan: e51449f0832d1fe17da632af0d22adeb3cfa3543
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   PGDatePicker: 88960f3760edac96219c10320f25536ad31d0f44
   PGPickerView: 037acfb132a4c8054fb43aaa59a5ff50c7f747f5
@@ -107,6 +116,6 @@ SPEC CHECKSUMS:
   TABAnimated: 6b7514eef96f82c2a8baa5ae62f0f06bc171d8e3
   TZImagePickerController: 7850b158d025065b162a1a963d445040b828abc9
 
-PODFILE CHECKSUM: 96c69d9ddefd7b0a8e70f70bd9301edf25cedc95
+PODFILE CHECKSUM: 70a1bc9a546d165e5ce42dc38ddf50534cb0e113
 
 COCOAPODS: 1.6.1

@@ -59,6 +59,17 @@
     [bgView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)]];
     [[UIApplication sharedApplication].keyWindow addSubview:bgView];
     
+    //跳过按钮
+    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setFrame:CGRectMake(20, 40, 52, 24)];
+    [button setTitle:@"跳过" forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size: 14];
+    button.layer.cornerRadius = 4;
+    button.layer.borderWidth = 0.5;
+    button.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    [button addTarget:self action:@selector(tiaoGuo:) forControlEvents:UIControlEventTouchUpInside];
+    [bgView addSubview:button];
+    
     // 信息提示视图
     UIImageView *imgView = [[UIImageView alloc] init];
     [bgView addSubview:imgView];
@@ -129,6 +140,14 @@
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:_guidePageKey];
     
     if (_finish) _finish();
+}
+
+- (void) tiaoGuo:(UIButton *) sender {
+    UIView *bgView = sender.superview;
+    [bgView removeFromSuperview];
+    [[bgView subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    bgView = nil;
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:_guidePageKey];
 }
 
 @end

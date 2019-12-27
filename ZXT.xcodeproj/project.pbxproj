@@ -57,6 +57,12 @@
 		632A45E322CD8F8C000F3E39 /* ICECollectionMoveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632A45E222CD8F8C000F3E39 /* ICECollectionMoveController.m */; };
 		632A45E622CDA99D000F3E39 /* ICETableViewMoveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632A45E522CDA99D000F3E39 /* ICETableViewMoveController.m */; };
 		632A45EA22CDAA5F000F3E39 /* ZFReOrderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 632A45E822CDAA5F000F3E39 /* ZFReOrderTableView.m */; };
+		634C8C1723853C11004BF1B1 /* ICEScanCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 634C8C1623853C11004BF1B1 /* ICEScanCodeViewController.m */; };
+		634C8C1A23853D01004BF1B1 /* ICEScanViewStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 634C8C1923853D01004BF1B1 /* ICEScanViewStyle.m */; };
+		634C8C2423853E62004BF1B1 /* LBXPermissionSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 634C8C1E23853E62004BF1B1 /* LBXPermissionSetting.m */; };
+		634C8C2523853E62004BF1B1 /* LBXPermissionPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 634C8C1F23853E62004BF1B1 /* LBXPermissionPhotos.m */; };
+		634C8C2623853E62004BF1B1 /* LBXPermissionCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 634C8C2023853E62004BF1B1 /* LBXPermissionCamera.m */; };
+		634C8C2723853E62004BF1B1 /* LBXPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 634C8C2123853E62004BF1B1 /* LBXPermission.m */; };
 		63571C6D2297E88F002F43D1 /* 没网络.png in Resources */ = {isa = PBXBuildFile; fileRef = 63571C6B2297E88F002F43D1 /* 没网络.png */; };
 		63571C6E2297E88F002F43D1 /* 没数据.png in Resources */ = {isa = PBXBuildFile; fileRef = 63571C6C2297E88F002F43D1 /* 没数据.png */; };
 		636B2152229284D100E4A07B /* UIView+ICEZwt.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B2151229284D100E4A07B /* UIView+ICEZwt.m */; };
@@ -193,6 +199,19 @@
 		632A45E522CDA99D000F3E39 /* ICETableViewMoveController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICETableViewMoveController.m; sourceTree = "<group>"; };
 		632A45E822CDAA5F000F3E39 /* ZFReOrderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFReOrderTableView.m; sourceTree = "<group>"; };
 		632A45E922CDAA5F000F3E39 /* ZFReOrderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFReOrderTableView.h; sourceTree = "<group>"; };
+		634C8C1523853C11004BF1B1 /* ICEScanCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEScanCodeViewController.h; sourceTree = "<group>"; };
+		634C8C1623853C11004BF1B1 /* ICEScanCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEScanCodeViewController.m; sourceTree = "<group>"; };
+		634C8C1823853D01004BF1B1 /* ICEScanViewStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEScanViewStyle.h; sourceTree = "<group>"; };
+		634C8C1923853D01004BF1B1 /* ICEScanViewStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEScanViewStyle.m; sourceTree = "<group>"; };
+		634C8C1C23853E62004BF1B1 /* LBXPermission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXPermission.h; sourceTree = "<group>"; };
+		634C8C1D23853E62004BF1B1 /* LBXPermissionCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXPermissionCamera.h; sourceTree = "<group>"; };
+		634C8C1E23853E62004BF1B1 /* LBXPermissionSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionSetting.m; sourceTree = "<group>"; };
+		634C8C1F23853E62004BF1B1 /* LBXPermissionPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionPhotos.m; sourceTree = "<group>"; };
+		634C8C2023853E62004BF1B1 /* LBXPermissionCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXPermissionCamera.m; sourceTree = "<group>"; };
+		634C8C2123853E62004BF1B1 /* LBXPermission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXPermission.m; sourceTree = "<group>"; };
+		634C8C2223853E62004BF1B1 /* LBXPermissionPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXPermissionPhotos.h; sourceTree = "<group>"; };
+		634C8C2323853E62004BF1B1 /* LBXPermissionSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXPermissionSetting.h; sourceTree = "<group>"; };
+		634C8C282385400F004BF1B1 /* LBXScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LBXScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63571C6B2297E88F002F43D1 /* 没网络.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "没网络.png"; sourceTree = "<group>"; };
 		63571C6C2297E88F002F43D1 /* 没数据.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "没数据.png"; sourceTree = "<group>"; };
 		636B2150229284D100E4A07B /* UIView+ICEZwt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ICEZwt.h"; sourceTree = "<group>"; };
@@ -283,6 +302,7 @@
 		224303F72282AC28001E95A7 /* ZXT */ = {
 			isa = PBXGroup;
 			children = (
+				634C8C1423853BEC004BF1B1 /* scanCode */,
 				2243045B2282ADF3001E95A7 /* PrefixHeader.pch */,
 				636B21602293E94100E4A07B /* 占位图 */,
 				2243045F2282B163001E95A7 /* 线状图 */,
@@ -492,6 +512,33 @@
 			path = ZFReOrderTableView;
 			sourceTree = "<group>";
 		};
+		634C8C1423853BEC004BF1B1 /* scanCode */ = {
+			isa = PBXGroup;
+			children = (
+				634C8C1B23853E62004BF1B1 /* LBXPermissions */,
+				634C8C1523853C11004BF1B1 /* ICEScanCodeViewController.h */,
+				634C8C1623853C11004BF1B1 /* ICEScanCodeViewController.m */,
+				634C8C1823853D01004BF1B1 /* ICEScanViewStyle.h */,
+				634C8C1923853D01004BF1B1 /* ICEScanViewStyle.m */,
+			);
+			path = scanCode;
+			sourceTree = "<group>";
+		};
+		634C8C1B23853E62004BF1B1 /* LBXPermissions */ = {
+			isa = PBXGroup;
+			children = (
+				634C8C1C23853E62004BF1B1 /* LBXPermission.h */,
+				634C8C1D23853E62004BF1B1 /* LBXPermissionCamera.h */,
+				634C8C1E23853E62004BF1B1 /* LBXPermissionSetting.m */,
+				634C8C1F23853E62004BF1B1 /* LBXPermissionPhotos.m */,
+				634C8C2023853E62004BF1B1 /* LBXPermissionCamera.m */,
+				634C8C2123853E62004BF1B1 /* LBXPermission.m */,
+				634C8C2223853E62004BF1B1 /* LBXPermissionPhotos.h */,
+				634C8C2323853E62004BF1B1 /* LBXPermissionSetting.h */,
+			);
+			path = LBXPermissions;
+			sourceTree = "<group>";
+		};
 		636B21602293E94100E4A07B /* 占位图 */ = {
 			isa = PBXGroup;
 			children = (
@@ -552,6 +599,7 @@
 		B2841147C9466804F167C215 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				634C8C282385400F004BF1B1 /* LBXScan.framework */,
 				F9B2899D578FD9EDC9FC80E2 /* Pods_ZXT.framework */,
 			);
 			name = Frameworks;
@@ -731,6 +779,7 @@
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/CRBoxInputView/CRBoxInputView.framework",
 				"${BUILT_PRODUCTS_DIR}/KafkaRefresh/KafkaRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/LBXScan/LBXScan.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/PGDatePicker/PGDatePicker.framework",
 				"${BUILT_PRODUCTS_DIR}/PGPickerView/PGPickerView.framework",
@@ -747,6 +796,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CRBoxInputView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KafkaRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LBXScan.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PGDatePicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PGPickerView.framework",
@@ -771,8 +821,11 @@
 				631505EA22B8D21D006ED4A5 /* YXMonthView.m in Sources */,
 				63086D3A22B0F95200A23E54 /* GlobalConst.m in Sources */,
 				637C7890229E2B9400558261 /* ICEImageView.m in Sources */,
+				634C8C2723853E62004BF1B1 /* LBXPermission.m in Sources */,
 				631505FE22B8E692006ED4A5 /* ICEPageControl.m in Sources */,
 				6314DCF0229CC56A00738749 /* ICEImageViewCell.m in Sources */,
+				634C8C1A23853D01004BF1B1 /* ICEScanViewStyle.m in Sources */,
+				634C8C2423853E62004BF1B1 /* LBXPermissionSetting.m in Sources */,
 				63086DA322B399AF00A23E54 /* ICEPageControlViewController.m in Sources */,
 				63086DA722B39BA500A23E54 /* XHPageControl.m in Sources */,
 				631505F722B8E5E8006ED4A5 /* ICEPageScollerView.m in Sources */,
@@ -783,6 +836,7 @@
 				63D4ED4E22B75E32001D2947 /* CWPageControl.m in Sources */,
 				22CA2CFA2283FE1800460357 /* ICECodeViewController.m in Sources */,
 				63086D3122B0F75500A23E54 /* ICEUnReClickViewController.m in Sources */,
+				634C8C2523853E62004BF1B1 /* LBXPermissionPhotos.m in Sources */,
 				6328F490228E87AB00CDE193 /* ICETools.m in Sources */,
 				224303FD2282AC28001E95A7 /* ViewController.m in Sources */,
 				224304082282AC29001E95A7 /* main.m in Sources */,
@@ -796,6 +850,7 @@
 				224304622282B19A001E95A7 /* ICEZXTViewController.m in Sources */,
 				631505ED22B8D21D006ED4A5 /* YXDayCell.m in Sources */,
 				631505F422B8E5B2006ED4A5 /* ICEPCViewController.m in Sources */,
+				634C8C1723853C11004BF1B1 /* ICEScanCodeViewController.m in Sources */,
 				63D4ED4822B732BE001D2947 /* ICEScrollPageView.m in Sources */,
 				636B2165229400B300E4A07B /* ICETableXibViewController.m in Sources */,
 				631505EC22B8D21D006ED4A5 /* MMButton.m in Sources */,
@@ -804,6 +859,7 @@
 				637C791422A1152E00558261 /* UIImage+ICEImage.m in Sources */,
 				6328F48B228E5B1600CDE193 /* ICEXibTableViewCell.m in Sources */,
 				636B215A2293A97C00E4A07B /* ICECodeCollectionViewCell.m in Sources */,
+				634C8C2623853E62004BF1B1 /* LBXPermissionCamera.m in Sources */,
 				6314DCF4229CE5CC00738749 /* ICEWatchImageView.m in Sources */,
 				6328F4A3228EB5CE00CDE193 /* ICECollectionViewController.m in Sources */,
 				63086D2122AFA77200A23E54 /* ICEDoubleMoveView.m in Sources */,
@@ -1000,6 +1056,7 @@
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveCocoa/ReactiveCocoa.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDAutoLayout/SDAutoLayout.framework/Headers\"",
+					"${PODS_ROOT}",
 				);
 				INFOPLIST_FILE = ZXT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1033,6 +1090,7 @@
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveCocoa/ReactiveCocoa.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDAutoLayout/SDAutoLayout.framework/Headers\"",
+					"${PODS_ROOT}",
 				);
 				INFOPLIST_FILE = ZXT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
