@@ -111,7 +111,8 @@
              @"ICEPCViewController",
              @"collectionView交换cell",
              @"tableView交换cell",
-             @"扫码"];
+             @"扫码",
+             @"多section分区collectionView"];
 }
 
 - (NSArray *)controllerClassArray {
@@ -130,7 +131,8 @@
              @"ICEPCViewController",
              @"ICECollectionMoveController",
              @"ICETableViewMoveController",
-             @"ICEScanCodeViewController"];
+             @"ICEScanCodeViewController",
+             @"ICEDHCollectionViewController"];
 }
 
 //内存警告

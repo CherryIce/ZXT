@@ -65,6 +65,7 @@
 		634C8C2723853E62004BF1B1 /* LBXPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 634C8C2123853E62004BF1B1 /* LBXPermission.m */; };
 		63571C6D2297E88F002F43D1 /* 没网络.png in Resources */ = {isa = PBXBuildFile; fileRef = 63571C6B2297E88F002F43D1 /* 没网络.png */; };
 		63571C6E2297E88F002F43D1 /* 没数据.png in Resources */ = {isa = PBXBuildFile; fileRef = 63571C6C2297E88F002F43D1 /* 没数据.png */; };
+		6363ED2C23C720B200993E06 /* ICEDHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6363ED2B23C720B200993E06 /* ICEDHCollectionViewController.m */; };
 		636B2152229284D100E4A07B /* UIView+ICEZwt.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B2151229284D100E4A07B /* UIView+ICEZwt.m */; };
 		636B215A2293A97C00E4A07B /* ICECodeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B21592293A97C00E4A07B /* ICECodeCollectionViewCell.m */; };
 		636B215D2293D11400E4A07B /* ICEXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B215C2293D11400E4A07B /* ICEXibView.m */; };
@@ -214,6 +215,8 @@
 		634C8C282385400F004BF1B1 /* LBXScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LBXScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63571C6B2297E88F002F43D1 /* 没网络.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "没网络.png"; sourceTree = "<group>"; };
 		63571C6C2297E88F002F43D1 /* 没数据.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "没数据.png"; sourceTree = "<group>"; };
+		6363ED2A23C720B200993E06 /* ICEDHCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEDHCollectionViewController.h; sourceTree = "<group>"; };
+		6363ED2B23C720B200993E06 /* ICEDHCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEDHCollectionViewController.m; sourceTree = "<group>"; };
 		636B2150229284D100E4A07B /* UIView+ICEZwt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ICEZwt.h"; sourceTree = "<group>"; };
 		636B2151229284D100E4A07B /* UIView+ICEZwt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ICEZwt.m"; sourceTree = "<group>"; };
 		636B21582293A97C00E4A07B /* ICECodeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICECodeCollectionViewCell.h; sourceTree = "<group>"; };
@@ -372,6 +375,8 @@
 				632A45E222CD8F8C000F3E39 /* ICECollectionMoveController.m */,
 				632A45E422CDA99D000F3E39 /* ICETableViewMoveController.h */,
 				632A45E522CDA99D000F3E39 /* ICETableViewMoveController.m */,
+				6363ED2A23C720B200993E06 /* ICEDHCollectionViewController.h */,
+				6363ED2B23C720B200993E06 /* ICEDHCollectionViewController.m */,
 			);
 			path = "线状图";
 			sourceTree = "<group>";
@@ -824,6 +829,7 @@
 				634C8C2723853E62004BF1B1 /* LBXPermission.m in Sources */,
 				631505FE22B8E692006ED4A5 /* ICEPageControl.m in Sources */,
 				6314DCF0229CC56A00738749 /* ICEImageViewCell.m in Sources */,
+				6363ED2C23C720B200993E06 /* ICEDHCollectionViewController.m in Sources */,
 				634C8C1A23853D01004BF1B1 /* ICEScanViewStyle.m in Sources */,
 				634C8C2423853E62004BF1B1 /* LBXPermissionSetting.m in Sources */,
 				63086DA322B399AF00A23E54 /* ICEPageControlViewController.m in Sources */,
