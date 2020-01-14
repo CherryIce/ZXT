@@ -217,6 +217,7 @@
 		63571C6C2297E88F002F43D1 /* 没数据.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "没数据.png"; sourceTree = "<group>"; };
 		6363ED2A23C720B200993E06 /* ICEDHCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICEDHCollectionViewController.h; sourceTree = "<group>"; };
 		6363ED2B23C720B200993E06 /* ICEDHCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICEDHCollectionViewController.m; sourceTree = "<group>"; };
+		6363ED2D23C72EA000993E06 /* 求是大厦.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "求是大厦.gpx"; sourceTree = "<group>"; };
 		636B2150229284D100E4A07B /* UIView+ICEZwt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ICEZwt.h"; sourceTree = "<group>"; };
 		636B2151229284D100E4A07B /* UIView+ICEZwt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ICEZwt.m"; sourceTree = "<group>"; };
 		636B21582293A97C00E4A07B /* ICECodeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICECodeCollectionViewCell.h; sourceTree = "<group>"; };
@@ -319,6 +320,7 @@
 				224304032282AC29001E95A7 /* LaunchScreen.storyboard */,
 				224304062282AC29001E95A7 /* Info.plist */,
 				224304072282AC29001E95A7 /* main.m */,
+				6363ED2D23C72EA000993E06 /* 求是大厦.gpx */,
 			);
 			path = ZXT;
 			sourceTree = "<group>";
@@ -783,6 +785,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-ZXT/Pods-ZXT-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/CRBoxInputView/CRBoxInputView.framework",
+				"${BUILT_PRODUCTS_DIR}/KJBannerView/KJBannerView.framework",
 				"${BUILT_PRODUCTS_DIR}/KafkaRefresh/KafkaRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/LBXScan/LBXScan.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
@@ -800,6 +803,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CRBoxInputView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KJBannerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KafkaRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LBXScan.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",

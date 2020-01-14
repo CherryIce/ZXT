@@ -15,4 +15,5 @@ target 'ZXT' do
   pod 'PGDatePicker'
   pod 'LBXScan/LBXZXing'
   pod 'LBXScan/UI'
+  pod 'KJBannerView'
 end

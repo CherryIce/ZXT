@@ -8,7 +8,9 @@
 
 #import "ICEDHCollectionViewController.h"
 
-@interface ICEDHCollectionViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+#import "KJBannerHeader.h"
+
+@interface ICEDHCollectionViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,KJBannerViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *dataArray;
 
@@ -21,6 +23,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    CGFloat bannerW = self.collectionView.frame.size.width - 2*16;
+    CGFloat bannerH = bannerW * 179/343;
+    // 上面 headView 的高度
+    CGFloat headViewH = bannerH + 20;
+    // 将 headerView 的 X 值设置为负值，为 headerView 的高度
+    UIView *headView = [[UIView alloc] initWithFrame:CGRectMake(0, -headViewH, self.collectionView.frame.size.width, headViewH)];
+     
+    
+    KJBannerView * banner = [[KJBannerView alloc]initWithFrame:CGRectMake(16, 10, bannerW, bannerH)];
+    banner.delegate = self;
+    banner.pageControl.pageType = PageControlStyleSizeDot;
+    banner.imageType = KJBannerViewImageTypeMix;
+    banner.imageDatas = @[@"imagePlaceholder",@"http://photos.tuchong.com/285606/f/4374153.jpg"];
+    [headView addSubview:banner];
+    
+    [self.collectionView addSubview:headView];
+    // 内缩 collectionView 的显示内容
+    self.collectionView.contentInset = UIEdgeInsetsMake(headViewH, 0, 0, 0);
+    
     [self.collectionView reloadData];
 }
 
@@ -41,8 +63,11 @@
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identify forIndexPath:indexPath];
     [cell sizeToFit];
     
-    cell.backgroundColor = [UIColor redColor];
-    
+    if (indexPath.section %2 == 0) {
+        cell.backgroundColor = [UIColor redColor];
+    }else{
+        cell.backgroundColor = [UIColor greenColor];
+    }
     return cell;
 }
 
@@ -61,6 +86,17 @@
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"选择%ld",indexPath.item);
+}
+
+#pragma mark --KJBannerViewDelegate
+/** 点击图片回调 */
+- (void)kj_BannerView:(KJBannerView *)banner SelectIndex:(NSInteger)index {
+    NSLog(@"index = %ld",(long)index);
+}
+
+/** 滚动时候回调 是否隐藏自带的PageControl */
+- (BOOL)kj_BannerView:(KJBannerView *)banner CurrentIndex:(NSInteger)index {
+    return false;
 }
 
 #pragma mark - Lazy Methods

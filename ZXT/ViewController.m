@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+#import <CoreLocation/CoreLocation.h>
+
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource,CLLocationManagerDelegate>
 
 @property (nonatomic,strong) NSArray <NSString *> *titleArray;
 @property (nonatomic,strong) NSArray <NSString *> *controllerClassArray;
@@ -22,6 +24,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self initUI];
+    
+    if ([CLLocationManager locationServicesEnabled]) {
+        CLLocationManager * cl = [[CLLocationManager alloc] init];
+        cl.delegate = self;
+        cl.desiredAccuracy = kCLLocationAccuracyBest;
+        cl.distanceFilter = 10;
+        [cl requestWhenInUseAuthorization];
+        [cl startUpdatingHeading];
+    }else{
+        //提醒打开定位功能
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -74,6 +87,25 @@
 - (void)initUI {
     self.view.backgroundColor = [UIColor whiteColor];
     [self.tableView reloadData];
+}
+
+#pragma mark -- CLLocationManagerDelegate
+- (void)locationManager:(CLLocationManager *)manager
+     didUpdateLocations:(NSArray<CLLocation *> *)locations{
+    //定位成功
+    CLLocation * curr = [locations lastObject];
+    CLGeocoder * geo = [[CLGeocoder alloc] init];
+    [geo reverseGeocodeLocation:curr completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+        for (CLPlacemark * placeMark in placemarks) {
+            NSDictionary * address = placeMark.addressDictionary;
+            NSLog(@"%@-%@-%@-%@",[address objectForKey:@"Country"],[address objectForKey:@"State"],[address objectForKey:@"City"],[address objectForKey:@"subLocality"]);
+        }
+    }];
+    [manager stopUpdatingLocation];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+    //定位失败
 }
 
 #pragma mark - Lazy Methods
